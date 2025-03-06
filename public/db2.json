@@ -3,17 +3,17 @@
     {
       "id": 17,
       "name": "Polo Lacoste Listrada Azul",
-      "image": "/imagens/products/Laco1.jpeg",
+      "image": "imagens/products/Laco1.jpeg",
       "price": "R$ 200,00",
       "maxInstallments": "10",
       "rating": 4,
       "installmentPrice": "R$ 125,00",
       "originalPrice": "R$ 300,00"
-    },
+    }, 
     {
       "id": 18,
       "name": "Polo Lacoste Listrada",
-      "image": "/imagens/products/Laco2.jpg",
+      "image": "imagens/products/Laco2.jpg",
       "price": "R$ 200,00",
       "maxInstallments": "10",
       "rating": 4,
@@ -23,7 +23,7 @@
     {
       "id": 19,
       "name": "Camisa Social Tommy ",
-      "image": "/imagens/products/Laco34.webp",
+      "image": "imagens/products/Laco34.webp",
       "price": "R$ 149,00",
       "maxInstallments": "10",
       "rating": 4,
@@ -33,7 +33,7 @@
     {
       "id": 20,
       "name": "Polo Tommy Listrada Azul",
-      "image": "/imagens/products/Laco33.jpg",
+      "image": "imagens/products/Laco33.jpg",
       "price": "R$ 149,00",
       "maxInstallments": "5",
       "rating": 4,
@@ -43,7 +43,7 @@
     {
       "id": 21,
       "name": "Social Tommy Listrada",
-      "image": "/imagens/products/Laco5.jpeg",
+      "image": "imagens/products/Laco5.jpeg",
       "price": "R$ 120,00",
       "maxInstallments": "10",
       "rating": 4,
@@ -53,7 +53,7 @@
     {
       "id": 22,
       "name": "Tenis Sport Adidas A3",
-      "image": "/imagens/products/ADIDAS.jpeg",
+      "image": "imagens/products/ADIDAS.jpeg",
       "price": "R$ 200,00",
       "maxInstallments": "10",
       "rating": 4,
@@ -63,7 +63,7 @@
     {
       "id": 23,
       "name": "Tenis Fila 3S5",
-      "image": "/imagens/products/FILA1.webp",
+      "image": "imagens/products/FILA1.webp",
       "price": "R$ 250,00",
       "maxInstallments": "10",
       "rating": 4,
@@ -73,7 +73,7 @@
     {
       "id": 24,
       "name": "Tenis Sport Nike Xs",
-      "image": "/imagens/products/nike.jpg",
+      "image": "imagens/products/nike.jpg",
       "price": "R$ 279,99",
       "maxInstallments": "10",
       "rating": 4,
@@ -83,7 +83,7 @@
     {
       "id": 25,
       "name": "Tenis Gucci",
-      "image": "/imagens/products/Gucci2.jpg",
+      "image": "imagens/products/Gucci2.jpg",
       "price": "R$ 430,00",
       "maxInstallments": "10",
       "rating": 4,
@@ -93,7 +93,7 @@
     {
       "id": 26,
       "name": "Tenis Gucci Tennis 1977",
-      "image": "/imagens/products/Gucci.jpeg",
+      "image": "imagens/products/Gucci.jpeg",
       "price": "R$ 550,00",
       "maxInstallments": "10",
       "rating": 4,
@@ -103,7 +103,7 @@
     {
       "id": 27,
       "name": "Rolex de Luxo",
-      "image": "/imagens/products/Relo4.jpeg",
+      "image": "imagens/products/Relo4.jpeg",
       "price": "R$ 700,00",
       "maxInstallments": "10",
       "rating": 4,
@@ -113,7 +113,7 @@
     {
       "id": 28,
       "name": "Relogio de Auto Nivel",
-      "image": "/imagens/products/relo2.jpeg",
+      "image": "imagens/products/relo2.jpeg",
       "price": "R$ 1.000,00",
       "maxInstallments": "10",
       "rating": 4,
@@ -123,7 +123,7 @@
     {
       "id": 29,
       "name": "Relogio de Luxo",
-      "image": "/imagens/products/Relo1.jpeg",
+      "image": "imagens/products/Relo1.jpeg",
       "price": "R$ 2.500,00",
       "maxInstallments": "10",
       "rating": 4,
@@ -133,7 +133,7 @@
     {
       "id": 30,
       "name": "Relogio Digital",
-      "image": "/imagens/products/Relo5.webp",
+      "image": "imagens/products/Relo5.webp",
       "price": "R$ 5.500,00",
       "maxInstallments": "10",
       "rating": 4,
@@ -143,7 +143,7 @@
     {
       "id": 31,
       "name": "Rolex Luxuoso",
-      "image": "/imagens/products/relo6.jpg",
+      "image": "imagens/products/relo6.jpg",
       "price": "R$ 2.000,00",
       "maxInstallments": "10",
       "rating": 4,

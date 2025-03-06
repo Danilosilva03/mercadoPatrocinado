@@ -27,8 +27,11 @@ export default function Header() {
   
   return (
     <header>
-      {/* Imagem principal de fundo */}
-      <img src="/imagens/iMAGEM33.png" alt="Products" className="header-background" />
+   
+   {/* Imagem principal de fundo */}
+       <div className="header-background">
+      <img src={`${process.env.PUBLIC_URL}/imagens/iMAGEM33.png`} alt="featured-products-image" />
+      </div>
 
       <div className="inner-content">
         {/* Conteúdo à esquerda */}
@@ -40,7 +43,6 @@ export default function Header() {
             </p>
 
             {/* Barra de Pesquisa  */}
-            
             <div className="search-container">
               <input type="text" placeholder="Buscar produtos..."/>
               <button type="submit">Enviar</button>           
@@ -56,7 +58,8 @@ export default function Header() {
 
         {/* Imagem do lado direito */}
         <div className="right-side">
-          <img src="/imagens/plano3.png" alt="Products" />
+        <img src={`${process.env.PUBLIC_URL}/imagens/plano3.png`} alt="Product" />
+
         </div>
       </div>
   </header>

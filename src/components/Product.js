@@ -30,7 +30,7 @@ export default function Product({
     // Aguarda a transição antes de redirecionar ao checkout
     setTimeout(() => {
       navigate(`/checkout?id=${id}&name=${encodeURIComponent(name)}&price=${encodeURIComponent(price)}&image=${encodeURIComponent(image)}&cartTotal=${encodeURIComponent(price)}`);
-    }, ); // 500ms de atraso para dar tempo da rolagem completar
+    }, 500); // 500ms de atraso para dar tempo da rolagem completar
   };
 
   // Função para adicionar ao carrinho sem redirecionar
@@ -48,7 +48,7 @@ export default function Product({
 
   return (
     <div className="product">
-      <img src={image} alt={name} className="product-image" />
+      <img src={`${process.env.PUBLIC_URL}/${image}`} alt={name} className="product-image" />
       <p className="product-name">{name}</p>
       <p className="product-rating">{ratingStars}</p>
       

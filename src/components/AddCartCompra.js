@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faMoneyBill } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-import './ExclusiveSection.css'; 
+import './ExclusiveSection.css';
 
 export default function AddCartCompra({ addProductToCart, cartItems = [] }) {
   const [exclusiveProducts, setExclusiveProducts] = useState([]);
@@ -10,7 +10,7 @@ export default function AddCartCompra({ addProductToCart, cartItems = [] }) {
 
   // Buscar produtos do arquivo db2.json
   useEffect(() => {
-    fetch("/db2.json")
+    fetch(`${process.env.PUBLIC_URL}/db2.json`)
       .then(response => response.json())
       .then(data => {
         if (data.additionalImages) {
@@ -64,15 +64,15 @@ export default function AddCartCompra({ addProductToCart, cartItems = [] }) {
       addProductToCart(productToCheckout);  // Adiciona o produto ao carrinho
     }
 
-// Rola a página para o topo com uma transição suave
-window.scrollTo({
-  top: 0,
-  behavior: 'smooth' // Transição suave para o topo da página
-});
+    // Rola a página para o topo com uma transição suave
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Transição suave para o topo da página
+    });
 
     setTimeout(() => {
-    navigate('/checkout', { state: { product: productToCheckout, cartTotal: productToCheckout.price } });
-  }, );
+      navigate('/checkout', { state: { product: productToCheckout, cartTotal: productToCheckout.price } });
+    }, 100);
   };
 
   return (
@@ -84,7 +84,11 @@ window.scrollTo({
       <div className="additionalImages">
         {exclusiveProducts.map(product => (
           <div key={product.id} className="sponsored-product">
-            <img src={product.image} alt={product.name} className="sponsored-product-image" />
+            <img 
+              src={`${process.env.PUBLIC_URL}/${product.image}`} 
+              alt={product.name} 
+              className="sponsored-product-image" 
+            />
             <p className="sponsored-product-name">{product.name}</p>
             <p className="sponsored-product-rating">
               {'★'.repeat(product.rating)}{'☆'.repeat(5 - product.rating)}
@@ -106,14 +110,16 @@ window.scrollTo({
             </p>
             <div className="sponsored-product-buttons">
               <button 
-                onClick={() => handleComprarAgora(product)}
-                className="sponsored-btn-icon">
+                onClick={() => handleComprarAgora(product)} 
+                className="sponsored-btn-icon"
+              >
                 <span>Comprar Agora</span>
                 <FontAwesomeIcon icon={faMoneyBill} />
               </button>
               <button 
-                onClick={() => handleAddToCart(product)}
-                className="sponsored-add-to-cart-btn">
+                onClick={() => handleAddToCart(product)} 
+                className="sponsored-add-to-cart-btn"
+              >
                 <span>Adicionar ao Carrinho</span>
                 <FontAwesomeIcon icon={faCartShopping} />
               </button>

@@ -61,7 +61,7 @@ export default function SidebarProduct({
           <FontAwesomeIcon icon={faXmark} />
         </button>
         <div className="details">
-          <h4>{name}</h4>
+          <h3>{name}</h3>
           <div className="quantity-control">
             <button onClick={handleDecrease} className="quantity-btn">-</button>
             <input
@@ -79,7 +79,7 @@ export default function SidebarProduct({
         </div>
       </div>
       <div className="right-side">
-        <img src={image} alt={name} className="product-image" />
+      <img src={`${process.env.PUBLIC_URL}/${image}`} alt={name} className="product-image" />
       </div>
     </div>
   );

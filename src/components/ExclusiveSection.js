@@ -23,7 +23,7 @@ export default function ExclusiveSection( addProductToCart) {
             </Link>
            </div>
            <div className="right-sidee">
-              <img src="/imagens/exclusive.png" alt="Smart Band" />
+           <img src={`${process.env.PUBLIC_URL}/imagens/exclusive.png`} alt="Smart Band" />
            </div>
         </div>
       </div>

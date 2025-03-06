@@ -25,7 +25,7 @@ export default function Navbar({ setShowSidebarCart, selectedProducts }) {
                className="menu-button"
                onClick={() => setShowMenu(!showMenu)}
             >
-               <img src="/imagens/menu.png" alt="Menu" />
+                <img src={`${process.env.PUBLIC_URL}/imagens/menu.png`} alt="Menu" />
             </button>
 
             {/* Menu lateral (exibido apenas em telas pequenas) */}

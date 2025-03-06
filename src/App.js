@@ -77,16 +77,22 @@ function App() {
 
   // Carrega produtos de 'db.json'
   useEffect(() => {
-    fetch('/db.json')
-      .then((res) => res.json())
+    fetch(`${process.env.PUBLIC_URL}/db.json`)
+    .then((res) => {
+        if (!res.ok) {
+          throw new Error('Erro ao carregar o JSON');
+        }
+        return res.json();
+      })
       .then((data) => {
+        console.log(data);  // Verifique se os dados estão chegando corretamente
         if (data.products) setProducts(data.products);
       })
-      .catch(error => console.error('Erro ao buscar produtos:', error));
+      .catch((error) => console.error('Erro ao buscar produtos:', error));
   }, []);
 
   return (
-    <Router>
+    <Router basename="/mercadoPatrocinado">
       <div className="App">
         <Navbar 
           selectedProducts={selectedProducts}
