@@ -45,7 +45,8 @@
     "to-regex-range": "^5.0.1",
     "totalist": "^3.0.1",
     "typed.js": "^2.1.0",
-    "webpack": "^5.97.1"
+    "webpack": "^5.97.1",
+    "homepage": "https://danilosilva03.github.io/mercadoPatrocinado"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -75,7 +76,6 @@
     "@babel/plugin-transform-private-property-in-object": "^7.25.9",
     "@babel/preset-react": "^7.25.9",
     "gh-pages": "^6.3.0"
-  },
-  "homepage": "https://danilosilva03.github.io/mercadoPatrocinado"
+  }
 
 }
