@@ -85,11 +85,13 @@ function App() {
         return res.json();
       })
       .then((data) => {
-        console.log(data);  // Verifique se os dados estão chegando corretamente
         if (data.products) setProducts(data.products);
       })
       .catch((error) => console.error('Erro ao buscar produtos:', error));
   }, []);
+
+  // Definir o basename dinamicamente com base no ambiente
+  const basename = window.location.hostname === 'localhost' ? '' : '/mercadoPatrocinado';
 
   return (
     <Router basename="/mercadoPatrocinado">
