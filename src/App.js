@@ -15,70 +15,63 @@ function App() {
   const [selectedProducts, setSelectedProducts] = useState([]);
   const [cartTotal, setCartTotal] = useState(0);
 
-  // Função para atualizar o total do carrinho
   const addToCartTotal = (value) => {
     setCartTotal(prevTotal => prevTotal + value);
   };
 
-  // Função para adicionar produto ao carrinho
   const addProductToCart = (product) => {
     const productPrice = parsePrice(product.price);
 
     const existingProduct = selectedProducts.find((p) => p.id === product.id);
 
     if (existingProduct) {
-      // Atualiza a quantidade e o total
       const updatedProducts = selectedProducts.map((p) =>
         p.id === product.id ? { ...p, quantity: p.quantity + 1 } : p
       );
       setSelectedProducts(updatedProducts);
-      addToCartTotal(productPrice); // Adiciona o preço do produto ao total
+      addToCartTotal(productPrice);
     } else {
-      // Adiciona um novo produto
       setSelectedProducts(prevProducts => [...prevProducts, { ...product, quantity: 1 }]);
-      addToCartTotal(productPrice); // Adiciona o preço do produto ao total
+      addToCartTotal(productPrice);
     }
   };
 
-  // Função para atualizar a quantidade de um produto no carrinho
   const updateCartQuantity = (productId, newQuantity) => {
-    setSelectedProducts(prevProducts =>
-      prevProducts.map(item =>
-        item.id === productId
-          ? { ...item, quantity: newQuantity }
-          : item
-      )
-    );
+    setSelectedProducts(prevProducts => {
+      const updatedProducts = prevProducts.map(item =>
+        item.id === productId ? { ...item, quantity: newQuantity } : item
+      );
+      const newTotal = updatedProducts.reduce((total, item) => {
+        return total + parsePrice(item.price) * item.quantity;
+      }, 0);
+      setCartTotal(newTotal);
+      return updatedProducts;
+    });
   };
 
-  // Função para remover produto do carrinho
   const removeProductFromCart = (productId) => {
     const productToRemove = selectedProducts.find((p) => p.id === productId);
     if (!productToRemove) return;
 
-    // Remove o produto do carrinho
     const updatedProducts = selectedProducts.filter((p) => p.id !== productId);
     setSelectedProducts(updatedProducts);
 
-    // Subtrai o preço do produto removido do total do carrinho
     const productPrice = parsePrice(productToRemove.price);
     addToCartTotal(-productPrice * productToRemove.quantity);
   };
 
-  // Função para converter o preço para número
   const parsePrice = (priceString) => {
     if (typeof priceString !== 'string') {
       console.warn('O preço não é uma string:', priceString);
-      priceString = String(priceString); // Converte para string se não for
+      priceString = String(priceString);
     }
-    // Limpa caracteres não numéricos e converte para float
-    return parseFloat(priceString.replace('R$', '').replace(/\./g, '').replace(',', '.')) || 0;
+    const parsedPrice = parseFloat(priceString.replace('R$', '').replace(/\./g, '').replace(',', '.'));
+    return isNaN(parsedPrice) ? 0 : parsedPrice;
   };
 
-  // Carrega produtos de 'db.json'
   useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/db.json`)
-    .then((res) => {
+      .then((res) => {
         if (!res.ok) {
           throw new Error('Erro ao carregar o JSON');
         }
@@ -90,16 +83,10 @@ function App() {
       .catch((error) => console.error('Erro ao buscar produtos:', error));
   }, []);
 
-  // Definir o basename dinamicamente com base no ambiente
-  const basename = window.location.hostname === 'localhost' ? '' : '/mercadoPatrocinado';
-
   return (
     <Router basename="/mercadoPatrocinado">
       <div className="App">
-        <Navbar 
-          selectedProducts={selectedProducts}
-          setShowSidebarCart={setShowSidebarCart} 
-        />
+        <Navbar selectedProducts={selectedProducts} setShowSidebarCart={setShowSidebarCart} />
 
         <SidebarCart 
           addToCartTotal={addToCartTotal}
@@ -116,46 +103,19 @@ function App() {
           <Routes>
             <Route 
               path="/" 
-              element={
-                <HomePage
-                  addToCartTotal={addToCartTotal}
-                  removeProductFromCart={removeProductFromCart}
-                  selectedProducts={selectedProducts}
-                  addProductToCart={addProductToCart}
-                  products={products}
-                  setShowSidebarCart={setShowSidebarCart}
-                  showSidebarCart={showSidebarCart}
-                  cartTotal={cartTotal}
-                />
-              } 
+              element={<HomePage addToCartTotal={addToCartTotal} removeProductFromCart={removeProductFromCart} selectedProducts={selectedProducts} addProductToCart={addProductToCart} products={products} setShowSidebarCart={setShowSidebarCart} showSidebarCart={showSidebarCart} cartTotal={cartTotal} />} 
             />
             <Route 
               path="/products" 
-              element={
-                <ProductsPage
-                  products={products}
-                  addProductToCart={addProductToCart}
-                />
-              }
+              element={<ProductsPage products={products} addProductToCart={addProductToCart} />} 
             />
             <Route
               path="/checkout"
-              element={
-                <FormPagamento 
-                cartTotal={cartTotal}
-                selectedProducts={selectedProducts}
-                onRemoveProduct={removeProductFromCart} 
-                />
-              }
+              element={<FormPagamento cartTotal={cartTotal} selectedProducts={selectedProducts} onRemoveProduct={removeProductFromCart} />}
             />
           </Routes>
 
-          {/* Componente AddCartCompra para produtos de db2.json */}
-          <AddCartCompra  
-            addProductToCart={addProductToCart} 
-            cartItems={selectedProducts} 
-            updateCartQuantity={updateCartQuantity}
-          />
+          <AddCartCompra addProductToCart={addProductToCart} cartItems={selectedProducts} updateCartQuantity={updateCartQuantity} />
         </main>
         <Footer />
       </div>
