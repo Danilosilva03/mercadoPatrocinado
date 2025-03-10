@@ -265,7 +265,7 @@ header {
     z-index: 1;
   }
   
-  .header-background {
+  .header-background img {
     position: absolute;
     top: 0;
     left: 0;
@@ -275,19 +275,13 @@ header {
     z-index: -1; /* Mantém a imagem no fundo */
   }
 
-.featured-products-image {
-    width: auto; /* Ajuste conforme necessário */
-    height: auto; /* Manter a proporção da imagem */
-}
-
-
 header .inner-content { 
     max-width: 1600px;
     margin: 0 auto; /* Centraliza horizontalmente */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding: 3rem;
+    padding: 0rem;
     gap: 3rem; 
 }
 
@@ -342,7 +336,7 @@ header .left-side p {
 }
 
 header .right-side img {
-    width: 110%;
+    width: 100%;
     background-color: transparent; /* Garantia de que o fundo da imagem em si seja transparente */
 }
 
