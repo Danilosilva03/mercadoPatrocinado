@@ -258,7 +258,6 @@ nav {
 /* START HEADER */
 /* Adicione isso ao seu CSS */
 /* Estilo geral do header */
-
 header {
     position: relative;
     width: 100%;
@@ -274,8 +273,8 @@ header {
     object-fit: cover; /* Ajusta a imagem sem distorção */
     z-index: -1; /* Mantém a imagem no fundo */
   }
-
-header .inner-content { 
+  
+  header .inner-content { 
     max-width: 1600px;
     margin: 0 auto; /* Centraliza horizontalmente */
     display: grid;
@@ -283,25 +282,25 @@ header .inner-content {
     align-items: center;
     padding: 0rem;
     gap: 3rem; 
-}
-
-header .left-side h1 {
+  }
+  
+  header .left-side h1 {
     color: #ffffff;
     font-size: 3.0rem;
-}
-
-header .left-side h2 {
+  }
+  
+  header .left-side h2 {
     font-size: 2.0rem;
     color: rgb(0, 0, 0);
-}
-
-header .left-side p {
+  }
+  
+  header .left-side p {
     padding-top: 1rem;
     padding-bottom: 2rem;
     color: #ffffff;
-}
-
-.hero-container {
+  }
+  
+  .hero-container {
     text-align: center;
     padding: 50px 20px;
     background: none;
@@ -319,8 +318,8 @@ header .left-side p {
     font-weight: bold;
   }
   
-.see-more-btn {
-    background-color:  rgb(80, 77, 77);
+  .see-more-btn {
+    background-color: rgb(80, 77, 77);
     padding: 0.8rem 1rem;
     border-radius: 8px;
     transition: all 0.2s;
@@ -328,20 +327,20 @@ header .left-side p {
     max-width: 130px;
     justify-content: space-between;
     align-items: center;
-}
-
-.see-more-btn:hover {
+  }
+  
+  .see-more-btn:hover {
     background-color: gray;
     max-width: 200px;
-}
-
-header .right-side img {
+  }
+  
+  header .right-side img {
     width: 100%;
     background-color: transparent; /* Garantia de que o fundo da imagem em si seja transparente */
-}
-
-/* Barra de Pesquisa */
-.search-container {
+  }
+  
+  /* Barra de Pesquisa */
+  .search-container {
     display: flex;
     align-items: center;
     margin-top: 1rem;
@@ -350,18 +349,18 @@ header .right-side img {
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     overflow: hidden; /* Garante que os elementos arredondados fiquem dentro do contêiner */
-}
-
-.search-container input {
+  }
+  
+  .search-container input {
     flex: 1; /* Ocupa o máximo de espaço disponível */
     padding: 0.8rem 1rem;
     font-size: 1rem;
     outline: none; /* Remove o contorno padrão ao clicar */
     border: none; /* Remove bordas padrão */
     background: none; /* Transparente para combinar com o fundo */
-}
-
-.search-container button {
+  }
+  
+  .search-container button {
     padding: 0.8rem 1.2rem; /* Preenchimento ajustado */
     font-size: 1rem;
     border: none; /* Remove bordas padrão */
@@ -370,14 +369,15 @@ header .right-side img {
     cursor: pointer;
     transition: all 0.3s ease; /* Transições suaves */
     border-left: 1px solid rgba(0, 0, 0, 0.1); /* Linha divisória sutil */
-}
-
-/* Efeito ao passar o mouse no botão */
-.search-container button:hover {
+  }
+  
+  /* Efeito ao passar o mouse no botão */
+  .search-container button:hover {
     background-color: var(--dark-primary-color); /* Cor mais escura no hover */
-}
-
-.color1 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efeito de elevação */
+  }
+  
+  .color1 {
     color: yellow; /* Azul, por exemplo */
   }
   
@@ -385,17 +385,6 @@ header .right-side img {
     color: #f80; /* Vermelho, por exemplo */
   }
   
-
-/* Efeito ao passar o mouse no botão */
-.search-container button:hover {
-    background-color: var(--dark-primary-color); /* Cor mais escura no hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efeito de elevação */
-}
-
-.search-container button:hover {
-    background-color: var(--dark-primary-color); /* Cor de fundo do botão quando o mouse passa sobre ele */
-}
-
 @media (max-width: 768px) {
     .nav h1 {
         font-size: 1.2rem;
