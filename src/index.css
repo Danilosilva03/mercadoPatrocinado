@@ -36,7 +36,6 @@ button{
     position: sticky;
     top: 0;
     left: 0;
-    border-radius: 60px;
     box-shadow: 10px 0px 10px #685353;
     z-index: 10;
 }
@@ -157,6 +156,7 @@ nav ul li:hover {
 @media (min-width: 769px) {
     .menu-button {
         display: none; /* Esconde o botão de menu em telas grandes */
+        left: 30%;
     }
 
     .mobile-menu {
@@ -173,7 +173,7 @@ nav ul li:hover {
 .menu-button {
     display: flex; /* Exibe o botão */
     position: absolute;
-    right: 43%;
+    left: 50%;
 }
 
 nav {
@@ -420,17 +420,18 @@ header {
         margin: 0 auto; /* Centraliza horizontalmente */
         display: block; /* Garante visibilidade */
         position: relative;
-        top: 15px;
+        
     }
 
     header .left-side h1 {
-        font-size: 2.8rem; /* Tamanho ajustado */
+        font-size: 2.2rem; /* Tamanho ajustado */
         width: 100%;
         margin: 0; /* Remove margens padrão */
         padding: 0; /* Remove preenchimento extra */
         text-align: center; /* Centraliza texto horizontalmente */
         position: relative; /* Permite ajustes com top */
         top: -20px; /* Move o título para cima */
+
     }
 
     header .left-side h2 {
@@ -443,7 +444,7 @@ header {
         position: absolute;
         top: 55px;
         left: 0;
-        background-color: #fff;
+        background-color: #ffffff;
         width: 100%;
         padding-bottom: 1rem;
         display: none;
@@ -463,7 +464,6 @@ header {
     max-width: 1200px;
     margin-inline: auto;
     padding-inline: 1rem;
-    margin-bottom: 4rem;
 }
 
 /* Lista de produtos com ajuste de grid */
@@ -840,7 +840,7 @@ hr {
     .section-title {
         padding-bottom: 1rem;
         margin-top: 1rem;
-        margin-bottom: 4rem; /* Espaço abaixo do título */
+        margin-bottom: 2rem; /* Espaço abaixo do título */
     }
 
     .product .name, 

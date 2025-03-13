@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Typed from 'typed.js';
 
 export default function Header() {
-  useEffect(() => {
+ /* useEffect(() => {
     const typedOptions = {
       strings: [
         '<span class="color1">Atendimento</span> <span class="color2">Exclusivo </span>',
@@ -23,7 +23,7 @@ export default function Header() {
     return () => {
       typed.destroy(); // Limpa o efeito ao desmontar o componente
     };
-  }, []);
+  }, []); */
   
   return (
     <header>
