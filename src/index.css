@@ -152,84 +152,68 @@ nav ul li:hover {
     display: none;
 }
 
-/* Esconde o mobile-menu em telas grandes */
+/* 📌 TELAS MAIORES QUE 768px - Volta ao menu normal */
 @media (min-width: 769px) {
     .menu-button {
-        display: none; /* Esconde o botão de menu em telas grandes */
-        left: 30%;
-    }
-
-    .mobile-menu {
-        display: none; /* Esconde o menu lateral em telas grandes */
+        display: none; /* Remove o botão do menu */
     }
 
     nav {
-        display: flex; /* Exibe o menu padrão em telas grandes */
+        display: flex; /* Exibe o menu padrão */
+    }
+
+    .mobile-menu {
+        display: none; /* Remove o menu lateral */
+    }
+    .search-input-container {
+        display: flex; /* Exibe novamente a barra de pesquisa */
     }
 }
-
 /* Responsividade para telas pequenas */
+/* 📌 TELAS MENORES QUE 768px - Exibe o menu lateral */
 @media (max-width: 768px) {
-.menu-button {
-    display: flex; /* Exibe o botão */
-    position: absolute;
-    left: 50%;
-}
+    .menu-button {
+        display: flex; /* Exibe o botão */
+        position: fixed; /* Mantém no topo da tela */
+        left: 75%; /* Mantém no canto esquerdo */
+        top: 22px; /* Mantém alinhado ao topo */
+        z-index: 1100; /* Garante que fique acima de tudo */
+        padding: 8px 12px; /* Ajusta tamanho */
+    }
 
-nav {
-    display: none; /* Oculta o menu padrão em telas pequenas */
-}
+    .search-input-container {
+        display: none; /* Oculta a barra de pesquisa */
+    }
 
-.nav {
-    flex-direction: column;
-    padding: 1rem;
-}
+    nav {
+        display: none; /* Oculta o menu normal */
+    }
 
-.nav .logo{
-    font-size: 1.7rem;
-}
-.search-input-container {
-    width: 100%; /* Ajusta a barra de pesquisa para preencher a tela */
-    margin: 1rem 0; /* Adiciona espaçamento */
-}
-    .header  {
-        height: auto; /* Ajusta a altura automaticamente */
-        padding: 10px; /* Adiciona um espaçamento */
-      }
-    
-      .inner-content {
-        text-align: center; /* Mantém o texto centralizado */
-      }
-    
-      .left-side h1 {
-        font-size: 1.8rem;
-      }
-
-
-    /* Estilo do menu lateral */
     .mobile-menu {
         position: fixed;
         top: 0;
         left: -100%; /* Fora da tela inicialmente */
         width: 250px;
-        height: 44%; /* Preenche a altura da tela */
-        background-color: gray;
+        height: 45vh; /* Ocupa toda a altura da tela */
+        background-color: var(--dark-primary-color);
+        border-radius: 8px;
         display: flex;
         flex-direction: column;
-        padding: 2rem;
+        padding: 1.5rem;
         transition: left 0.3s ease;
         z-index: 1000;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     }
 
+    /* Quando o menu for ativado */
     .mobile-menu.show {
-        left: 58%; /* Mostra o menu ao ser ativado */
-        border-radius: 20px;
-        color: #ffffff;
+        left: 0;
+        color: #000000;
     }
+    
 
     .mobile-menu span {
-       color: rgb(0, 0, 0);
+       color: rgb(255, 255, 255);
     }
 
     .mobile-menu ul {
@@ -253,8 +237,21 @@ nav {
         font-weight: bold;
         color: #424441;
     }
+
 }
-  
+
+/* 📌 TELAS MENORES QUE 400px - Ajustes para telas muito pequenas */
+@media (max-width: 460px) {
+    .menu-button {
+        left: 52%; /* Ajuste fino para telas muito pequenas */
+        top: 22px;
+    }
+
+    .mobile-menu {
+        width: 220px; /* Reduz um pouco a largura */
+    }
+}
+
 /* START HEADER */
 /* Adicione isso ao seu CSS */
 /* Estilo geral do header */
@@ -337,6 +334,7 @@ header {
   header .right-side img {
     width: 100%;
     background-color: transparent; /* Garantia de que o fundo da imagem em si seja transparente */
+    margin-top: 3rem;
   }
   
   /* Barra de Pesquisa */
@@ -390,8 +388,8 @@ header {
         font-size: 1.2rem;
     }
 
-    .header-background {
-        position: absolute;
+    .header-background img {
+        position: absolute; 
         top: 0;
         left: 0;
         width: 100%;
@@ -419,8 +417,7 @@ header {
         height: auto; /* Mantém proporções */
         margin: 0 auto; /* Centraliza horizontalmente */
         display: block; /* Garante visibilidade */
-        position: relative;
-        
+        position: relative;    
     }
 
     header .left-side h1 {

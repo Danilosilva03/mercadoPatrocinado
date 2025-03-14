@@ -24,12 +24,14 @@ export default function AddCartCompra({ addProductToCart, cartItems = [] }) {
 
   // Função para parsear o preço de string para número
   const parsePrice = (priceString) => {
-    return parseFloat(priceString.replace('R$', '').replace(/\./g, '').replace(',', '.')) || 0;
+    // Garantir que o preço seja um número, removendo 'R$', pontos e substituindo ',' por '.'
+    const price = parseFloat(priceString.replace('R$', '').replace(/\./g, '').replace(',', '.'));
+    return isNaN(price) ? 0 : price;  // Retorna 0 se o preço for inválido
   };
 
   // Função para formatar o valor como moeda BRL
   const formatPrice = (value) => {
-    if (isNaN(value)) return 'R$ 0,00';
+    if (isNaN(value)) return 'R$ 0,00';  // Retorna 'R$ 0,00' se o valor for inválido
     return `R$ ${value.toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`;
   };
 

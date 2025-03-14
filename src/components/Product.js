@@ -41,10 +41,21 @@ export default function Product({
   // Cria as estrelas de avaliação
   const ratingStars = '★'.repeat(rating) + '☆'.repeat(6 - rating);
 
+  // Função para converter preço para string
+  const formatPriceToString = (price) => {
+    // Garantir que o preço seja uma string antes de aplicar a formatação
+    if (price) {
+      const priceString = price.toString(); // Converte para string
+      return parseFloat(priceString.replace(/[^\d,]/g, '').replace(',', '.'))
+        .toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+    return null;
+  };
+
   // Formatação do preço para o formato de reais (BRL)
-  const formattedPrice = parseFloat(price.replace(/[^\d,]/g, '').replace(',', '.')).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-  const formattedOriginalPrice = originalPrice ? parseFloat(originalPrice.replace(/[^\d,]/g, '').replace(',', '.')).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) : null;
-  const formattedInstallmentPrice = installmentPrice ? parseFloat(installmentPrice.replace(/[^\d,]/g, '').replace(',', '.')).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) : null;
+  const formattedPrice = formatPriceToString(price);
+  const formattedOriginalPrice = originalPrice ? formatPriceToString(originalPrice) : null;
+  const formattedInstallmentPrice = installmentPrice ? formatPriceToString(installmentPrice) : null;
 
   return (
     <div className="product">
