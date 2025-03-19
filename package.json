@@ -1,4 +1,4 @@
- {
+{
   "name": "rockstors",
   "version": "1.0.0",
   "main": "index.js",
@@ -16,9 +16,8 @@
     "react-dom": "^18.3.1",
     "react-input-mask": "^2.0.4",
     "react-router-dom": "^6.26.1",
-    "react-scripts": "^5.0.1",
-    "typed.js": "^2.1.0",
-    "webpack": "^5.97.1"
+    "react-scripts": "^3.0.1",
+    "typed.js": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,7 +46,8 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-private-property-in-object": "^7.25.9",
     "@babel/preset-react": "^7.25.9",
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "webpack": "^4.42.0"
   },
   "homepage": "https://danilosilva03.github.io/mercadoPatrocinado"
 }
