@@ -574,8 +574,9 @@ header {
         margin-top: 15rem; 
     }
     .exclusive-section {
-        background-color: #00315f;
+        background: linear-gradient(135deg, #00315f, #0066a2);
     }
+    
 
     .section-titlee {
         padding-bottom: 1rem;
@@ -670,7 +671,8 @@ header {
 /* START FOOTER */
 /* Estilo geral do footer */
 footer {
-        background-color: rgb(73, 70, 70); /* Fundo vermelho */
+
+    background: linear-gradient(135deg,  rgb(73, 70, 70) 42%, gray 40%);
         color: #ffffff;
         position: relative; /* Use 'relative' ou 'absolute' conforme necessário */
         width: 100%; /* Garante que o footer ocupe toda a largura */
@@ -786,7 +788,7 @@ hr {
 
 /* Estilo geral dos Testimonials */
 .testimonialss {
-    background-color: gray;
+    background: linear-gradient(135deg, gray 60%, rgb(73, 70, 70) 40%);
     display: flex;
     flex-wrap: wrap; /* Ajusta para telas menores */
     padding: 4rem 1rem;

@@ -2,9 +2,6 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
-  useEffect(() => {
-    // Verifica se o Google Maps já está carregado
-  }, []);
 
   return ( <div className="page-inner-contentt">
     <div className="testimonialss">

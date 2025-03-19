@@ -6,17 +6,15 @@ import { useNavigate } from "react-router-dom";
 
 // Função para converter preços corretamente
 const parsePrice = (priceString) => {
-  if (!priceString) return 0; // Retorna 0 se o valor estiver indefinido
+  if (!priceString) return 0; // Retorna 0 se estiver indefinido
 
   if (typeof priceString !== "string") {
     console.warn("O preço não é uma string:", priceString);
-    priceString = String(priceString);
+    priceString = String(priceString).trim();
   }
 
-  // Remove 'R$', pontos e troca a vírgula por ponto
-  const parsedValue = parseFloat(
-    priceString.replace(/[^\d,]/g, "").replace(",", ".")
-  );
+  // Remove "R$", pontos e substitui a vírgula por ponto
+  const parsedValue = parseFloat(priceString.replace(/[^0-9,]/g, "").replace(",", "."));
 
   if (isNaN(parsedValue)) {
     console.error("Erro ao converter preço:", priceString);
@@ -29,7 +27,7 @@ const parsePrice = (priceString) => {
 export default function SidebarCart({
   setShowSidebarCart,
   showSidebarCart,
-  selectedProducts,
+  selectedProducts = [], // Garante que não seja undefined
   setSelectedProducts,
   cartTotal,
   setCartTotal,
@@ -38,7 +36,7 @@ export default function SidebarCart({
 
   // Calculando o total do carrinho
   useEffect(() => {
-    if (!selectedProducts || selectedProducts.length === 0) {
+    if (!selectedProducts.length) {
       setCartTotal(0);
       return;
     }
@@ -47,8 +45,9 @@ export default function SidebarCart({
       const priceNumber = parsePrice(product.price);
       const quantity = product.quantity || 1;
 
-      if (!priceNumber || isNaN(priceNumber)) {
-        console.warn(`Preço inválido para o produto ${product.name}`);
+      if (isNaN(priceNumber) || priceNumber <= 0) {
+        console.warn(`Preço inválido para o produto ${product.name}:`, priceNumber);
+        return total;
       }
 
       return total + priceNumber * quantity;
@@ -60,15 +59,13 @@ export default function SidebarCart({
 
   // Remover produto do carrinho
   const removeProductFromCart = (id) => {
-    const updatedProducts = selectedProducts.filter(
-      (product) => product.id !== id
-    );
+    const updatedProducts = selectedProducts.filter((product) => product.id !== id);
     setSelectedProducts(updatedProducts);
   };
 
   // Atualizar a quantidade do produto no carrinho
   const handleProductQuantityUpdate = (id, newQuantity) => {
-    if (newQuantity < 1) return; // Garante que a quantidade seja pelo menos 1
+    if (newQuantity < 1) return;
 
     const updatedProducts = selectedProducts.map((product) =>
       product.id === id ? { ...product, quantity: newQuantity } : product
@@ -113,10 +110,7 @@ export default function SidebarCart({
       {cartTotal > 0 && (
         <div className="total-container">
           <b>Valor Total: </b>
-          {cartTotal.toLocaleString("pt-BR", {
-            style: "currency",
-            currency: "BRL",
-          })}
+          {cartTotal.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}
           <button className="btn-cart" onClick={handleClick}>
             <FontAwesomeIcon icon={faMoneyBill} />
             <span>Enviar</span>

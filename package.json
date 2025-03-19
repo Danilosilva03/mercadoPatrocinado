@@ -1,10 +1,13 @@
-{
+ {
   "name": "rockstors",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "firebase": "^11.4.0",
     "firebase-admin": "^13.2.0",
     "json-server": "^1.0.0-beta.1",

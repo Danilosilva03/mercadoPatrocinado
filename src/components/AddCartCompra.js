@@ -22,16 +22,18 @@ export default function AddCartCompra({ addProductToCart, cartItems = [] }) {
       .catch(error => console.error('Erro ao buscar produtos:', error));
   }, []);
 
-  // Função para parsear o preço de string para número
-  const parsePrice = (priceString) => {
-    // Garantir que o preço seja um número, removendo 'R$', pontos e substituindo ',' por '.'
-    const price = parseFloat(priceString.replace('R$', '').replace(/\./g, '').replace(',', '.'));
-    return isNaN(price) ? 0 : price;  // Retorna 0 se o preço for inválido
+  // Função para garantir que o preço é um número
+  const parsePrice = (price) => {
+    if (!price) return 0; // Retorna 0 se o preço estiver vazio ou inválido
+    if (typeof price !== 'string') {
+      price = price.toString(); // Converte o preço para string
+    }
+    return parseFloat(price.replace(/[^\d,]/g, '').replace(',', '.')) || 0;
   };
 
   // Função para formatar o valor como moeda BRL
   const formatPrice = (value) => {
-    if (isNaN(value)) return 'R$ 0,00';  // Retorna 'R$ 0,00' se o valor for inválido
+    if (isNaN(value) || value === 0) return 'R$ 0,00'; // Verifica se o valor é inválido ou zero
     return `R$ ${value.toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`;
   };
 
@@ -45,10 +47,10 @@ export default function AddCartCompra({ addProductToCart, cartItems = [] }) {
     if (!isProductInCart(product.id)) {
       const productToAdd = {
         ...product,
-        price: parsePrice(product.price),  // Garantir que o preço seja um número
-        quantity: 1, // Adiciona com quantidade 1
+        price: parsePrice(product.price),  
+        quantity: 1, 
       };
-      addProductToCart(productToAdd);  // Adiciona o produto ao carrinho
+      addProductToCart(productToAdd);
     } else {
       console.error('Produto já está no carrinho');
     }
@@ -58,18 +60,17 @@ export default function AddCartCompra({ addProductToCart, cartItems = [] }) {
   const handleComprarAgora = (product) => {
     const productToCheckout = {
       ...product,
-      price: parsePrice(product.price),  // Garantir que o preço seja um número
-      quantity: 1, // Adiciona com quantidade 1
+      price: parsePrice(product.price),  
+      quantity: 1, 
     };
 
     if (!isProductInCart(product.id)) {
-      addProductToCart(productToCheckout);  // Adiciona o produto ao carrinho
+      addProductToCart(productToCheckout);
     }
 
-    // Rola a página para o topo com uma transição suave
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // Transição suave para o topo da página
+      behavior: 'smooth'
     });
 
     setTimeout(() => {
