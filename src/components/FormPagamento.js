@@ -102,7 +102,7 @@ export default function FormPagamento({ cartTotal, selectedProducts = [] }) {
                 </div>
               ))}
               <div className="security-notes">
-                <p><FontAwesomeIcon icon={faUserShield} /> Segurança garantida.</p>
+                <p><FontAwesomeIcon icon={faUserShield} /> Garantindo que sua informação esteja segura e que sua privacidade seja respeitada.</p>
                 <p><FontAwesomeIcon icon={faClipboard} /> Cobrança como <b>PG*BANK</b>.</p>
               </div>
             </div>

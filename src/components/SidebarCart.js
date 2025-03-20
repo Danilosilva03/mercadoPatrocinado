@@ -4,25 +4,34 @@ import { faMoneyBill, faXmark } from "@fortawesome/free-solid-svg-icons";
 import SidebarProduct from "./SidebarProduct";
 import { useNavigate } from "react-router-dom";
 
-// Função para converter preços corretamente
 const parsePrice = (priceString) => {
-  if (!priceString) return 0; // Retorna 0 se estiver indefinido
+  if (priceString == null) return 0; // Retorna 0 se estiver null ou undefined
 
-  if (typeof priceString !== "string") {
-    console.warn("O preço não é uma string:", priceString);
-    priceString = String(priceString).trim();
+  // Se o preço for um número, converte para string
+  if (typeof priceString === "number") {
+    priceString = priceString.toString();
   }
 
-  // Remove "R$", pontos e substitui a vírgula por ponto
-  const parsedValue = parseFloat(priceString.replace(/[^0-9,]/g, "").replace(",", "."));
+  // Se o preço não for uma string ainda, exibe um aviso
+  if (typeof priceString !== "string") {
+    console.warn("O preço não é uma string ou número válido:", priceString);
+    return 0; // Retorna 0 se o preço não for válido
+  }
+
+  // Remove espaços extras e os símbolos "R$", se existirem
+  priceString = priceString.trim().replace("R$", "").replace(/[^0-9,]/g, "");
+
+  // Substitui a vírgula por ponto para lidar com formatos decimais brasileiros
+  const parsedValue = parseFloat(priceString.replace(",", "."));
 
   if (isNaN(parsedValue)) {
     console.error("Erro ao converter preço:", priceString);
-    return 0;
+    return 0; // Retorna 0 se não for possível converter
   }
 
   return parsedValue;
 };
+
 
 export default function SidebarCart({
   setShowSidebarCart,

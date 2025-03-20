@@ -240,17 +240,23 @@ nav ul li:hover {
 
 }
 
-/* 📌 TELAS MENORES QUE 400px - Ajustes para telas muito pequenas */
+/* 📌 TELAS MENORES QUE 460px - Ajustes para telas pequenas */
 @media (max-width: 460px) {
     .menu-button {
-        left: 52%; /* Ajuste fino para telas muito pequenas */
+        left: 52%; /* Ajuste fino para telas pequenas */
         top: 22px;
     }
 
     .mobile-menu {
         width: 220px; /* Reduz um pouco a largura */
     }
+     
+
+
 }
+
+
+
 
 /* START HEADER */
 /* Adicione isso ao seu CSS */
@@ -571,7 +577,7 @@ header {
     }
 
     .products-container {
-        margin-top: 15rem; 
+        margin-top: 25rem; 
     }
     .exclusive-section {
         background: linear-gradient(135deg, #00315f, #0066a2);
@@ -719,25 +725,28 @@ footer {
     
     .logo-footer {
         display: flex; /* Ativa o Flexbox */
-        flex-direction: column; /* Organiza os elementos verticalmente */
-        align-items: center; /* Centraliza horizontalmente */
-        justify-content: center; /* Centraliza verticalmente */
-        text-align: center; /* Alinha o texto no meio */
+        flex-direction: column;
         width: 100%; /* Garante que o contêiner ocupe toda a largura */
+        padding: 2rem; /* Adiciona um espaço interno para não ficar colado nas bordas */
     }
     
     .logo-footer h1 {
         font-size: 3rem; /* Ajusta o tamanho do título */
-        margin: 0.5rem; /* Espaçamento entre os elementos */
-        text-align: center; /* Centraliza o texto */
-        width: 50%;
+        margin: 0.5rem; /* Espaçamento entre o título e outros elementos */
+        text-align: center; /* Garante que o título esteja centralizado */
+        width: 75%;
     }
     
     .logo-footer p {
-        font-size: 0.9rem; /* Define o tamanho do texto */
-        margin: 0.5rem 0; /* Espaçamento acima e abaixo */
-        text-align: center; /* Centraliza o texto */
+        font-size: 1rem; /* Ajusta o tamanho do texto */
+        margin-top: 1rem; /* Garante que o parágrafo fique abaixo do título */
+        text-align: center; /* Garante que o texto do parágrafo esteja centralizado */
+        width: 75%;
+
     }
+    
+    
+    
     
     .logoo {
         font-size: 2.5rem; /* Tamanho do título */
@@ -869,7 +878,7 @@ hr {
     }
 
     .logo-footer {
-        width: 100%; /* Garante que ocupe toda a largura em dispositivos menores */
+        width: 123%; /* Garante que ocupe toda a largura em dispositivos menores */
     }
 
     .logo-footer h1 {
@@ -897,6 +906,7 @@ hr {
 
     .copyright{
         font-size: 0.8rem;
+        color: #000000;
     }
 
     footer .links ul,

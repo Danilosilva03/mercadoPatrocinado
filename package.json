@@ -16,7 +16,7 @@
     "react-dom": "^18.3.1",
     "react-input-mask": "^2.0.4",
     "react-router-dom": "^6.26.1",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "typed.js": "^2.1.0"
   },
   "scripts": {

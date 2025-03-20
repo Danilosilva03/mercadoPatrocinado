@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react'; 
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
 import Typed from 'typed.js';
 
 export default function Header() {
+ 
  /* useEffect(() => {
     const typedOptions = {
       strings: [

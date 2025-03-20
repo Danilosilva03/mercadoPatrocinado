@@ -60,14 +60,14 @@ function App() {
     addToCartTotal(-productPrice * productToRemove.quantity);
   };
 
-  const parsePrice = (priceString) => {
-    if (typeof priceString !== 'string') {
-      console.warn('O preço não é uma string:', priceString);
-      priceString = String(priceString);
+  const parsePrice = (price) => {
+    if (typeof price !== 'string') {
+      price = String(price);  // Converte o preço para string se não for uma
     }
-    const parsedPrice = parseFloat(priceString.replace('R$', '').replace(/\./g, '').replace(',', '.'));
-    return isNaN(parsedPrice) ? 0 : parsedPrice;
+    // Remove qualquer caractere não numérico e substitui vírgula por ponto
+    return parseFloat(price.replace(/[^\d,]/g, '').replace(',', '.')) || 0;
   };
+  
 
   useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/db.json`)
