@@ -1,6 +1,7 @@
 import React from 'react';
 import Product from './Product';
 
+
 export default function ProductsList({ products, addProductToCart }) {
   return ( 
     <div className="product-list">

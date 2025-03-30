@@ -32,7 +32,7 @@ export default function Navbar({ setShowSidebarCart, selectedProducts }) {
             <div className={`mobile-menu ${showMenu ? "show" : ""}`}>
                <ul>
                   <h1>Mercado<span> Menu</span></h1>
-                  <li onClick={() => handleNavigation("/")}>Começo</li>
+                  <li onClick={() => handleNavigation("/")}>Inicio</li>
                   <li onClick={() => handleNavigation("/products")}>Produtos</li>
                   <li onClick={() => handleNavigation("/about")}>Patrocinados</li>
                   <li onClick={() => handleNavigation("/contact")}>Contato</li>

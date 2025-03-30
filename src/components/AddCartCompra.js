@@ -81,7 +81,7 @@ export default function AddCartCompra({ addProductToCart, cartItems = [] }) {
   return (
     <div className="additional-images-section">
       <div className="section-header">
-        <h3>Produtos Patrocinados</h3>
+        <h3>Produtos Patrocinado</h3>
         <div className="bar"></div>
       </div>
       <div className="additionalImages">
@@ -94,7 +94,7 @@ export default function AddCartCompra({ addProductToCart, cartItems = [] }) {
             />
             <p className="sponsored-product-name">{product.name}</p>
             <p className="sponsored-product-rating">
-              {'★'.repeat(product.rating)}{'☆'.repeat(5 - product.rating)}
+              {'★'.repeat(product.rating)}{'★'.repeat(5 - product.rating)}
             </p>
             <p className="sponsored-product-price">
               {product.originalPrice && (
@@ -104,13 +104,15 @@ export default function AddCartCompra({ addProductToCart, cartItems = [] }) {
               )}
               <br />
               <span>Por {formatPrice(parsePrice(product.price))}</span>
+              
               <br />
               {product.installmentPrice && (
-                <span>
+                <span className="preco-parcelas">
                   Em até {product.maxInstallments}x de {formatPrice(parsePrice(product.installmentPrice))}
                 </span>
               )}
             </p>
+      
             <div className="sponsored-product-buttons">
               <button 
                 onClick={() => handleComprarAgora(product)} 

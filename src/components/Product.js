@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 export default function Product({
   id,
   image,
@@ -39,7 +40,7 @@ export default function Product({
   };
 
   // Cria as estrelas de avaliação
-  const ratingStars = '★'.repeat(rating) + '☆'.repeat(6 - rating);
+  const ratingStars = '★'.repeat(rating) + '★'.repeat(6 - rating);
 
   // Função para converter preço para string
   const formatPriceToString = (price) => {

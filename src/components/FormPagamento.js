@@ -108,7 +108,7 @@ export default function FormPagamento({ cartTotal, selectedProducts = [] }) {
             </div>
             <div className="column">
               <h3 className="title">Pagamento</h3>
-              <img src={`${process.env.PUBLIC_URL}/imagens/barra.png`} alt="Cartões Aceitos" />
+              <img src={`${process.env.PUBLIC_URL}/imagens/barra.png`} alt="Cartões Aceitos" />           
               {[ 'nomeCartao', 'numeroCartao', 'mesExpiracao', 'anoExpiracao', 'cvv'].map(campo => (
                 <div key={campo} className="input-box">
                   <label htmlFor={campo}>{campo.charAt(0).toUpperCase() + campo.slice(1)}:</label>

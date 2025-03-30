@@ -8,10 +8,9 @@ export default function HomePage({ products, addProductToCart }) {
   return (
     <>
       <Header/>
-      
       <div className="page-inner-content">
            <div className="section-title">
-                <h3>Produto Pratrocinados Ofertas</h3>
+                <h3>Produto Pratrocinado Ofertas</h3>
                 <div className="underline"></div>
           </div>
 

@@ -58,7 +58,7 @@ export default function SidebarProduct({
           className="remove-product-btn"
           onClick={() => removeProductFromCart(id)}
         >
-          <FontAwesomeIcon icon={faXmark} />
+        <FontAwesomeIcon icon={faXmark} />
         </button>
         <div className="details">
           <h3>{name}</h3>
@@ -71,6 +71,7 @@ export default function SidebarProduct({
               readOnly
               className="quantity-input"
             />
+            
             <button onClick={handleIncrease} className="quantity-btn">+</button>
           </div>
           <p className="price-sum">

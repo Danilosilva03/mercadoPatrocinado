@@ -101,7 +101,7 @@
 /* Seção do formulário de pagamento */
 .payment-form {
   flex: 1;
-  padding: 25px;
+  padding: 35px;
   border-radius: 8px;
   background-color: gray; /* Cor sólida */
   box-shadow: 0 2px 8px rgba(80, 79, 79, 0.1);
@@ -109,6 +109,10 @@
   flex-direction: column;
 }
 
+.payment-form .title{
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
 
 .products-container {
   display: flex;
@@ -199,17 +203,18 @@
   font-size: 1.2em;
   font-weight: bold;
   margin-top: 20px;
-  color: rgb(253, 253, 253);
+  color: rgb(255, 255, 255);
 }
 
 /* Notas de segurança */
 .security-notes {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .security-notes p {
   font-size: 14px;
-  color: #333;
+  color: #000000;
 }
 
 /* Formulário de pagamento */
@@ -248,7 +253,7 @@ form {
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .flex {
@@ -257,8 +262,8 @@ form {
 }
 
 .column img {
-  height: 40px;
-  filter: drop-shadow(0 0 1px #000000);
+  height: 75px;
+  filter: drop-shadow(0 0 1px #ffffff);
   align-items: auto;
 }
 

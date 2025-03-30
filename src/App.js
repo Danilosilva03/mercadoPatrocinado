@@ -8,6 +8,8 @@ import SidebarCart from './components/SidebarCart';
 import FormPagamento from './components/FormPagamento';
 import AddCartCompra from './components/AddCartCompra'; 
 import './App.css';
+import './index.css'; // ou o caminho do seu arquivo de estilo CSS
+
 
 function App() {
   const [products, setProducts] = useState([]);

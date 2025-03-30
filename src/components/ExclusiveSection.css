@@ -17,18 +17,21 @@
   height: 4px;
   background-color: #00498d;
   margin: 4px auto 0 auto;
+  margin-bottom: 50px !important; /* Espaço abaixo da linha */
+
 }
 
 /* Container para as imagens adicionais */
 .additionalImages {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 270px);
-  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo, ajustando automaticamente */
   gap: 1.5rem;
-  padding-bottom: 2rem; /* Centraliza os produtos */
-  margin-top: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
 }
-
 /* Cada produto na seção adicional */
 .sponsored-product {
   padding: 1rem;
@@ -63,13 +66,21 @@
   text-decoration: line-through;
 }
 
+.sponsored-product-price .preco-parcelas{
+  font-weight: normal;
+}
+
 .sponsored-product-price {
-  font-size: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: #000000;
 }
 
 .linha-sobre-texto{
   color: #ff0000;
+  font-weight: bold;
+  font-size: 1.2rem;
+
 }
 /* Botões na seção adicional */
 .sponsored-product-buttons {
@@ -98,7 +109,7 @@
 }
 
 .sponsored-btn-icon span {
-  margin-right: 15px;
+  margin-right: 0px;
 }
 
 /* Estilo específico para o botão "Adicionar ao Carrinho" */
@@ -120,7 +131,7 @@
 }
 
 .sponsored-add-to-cart-btn span {
-  margin-right: 14px; /* Mantém o span alinhado à esquerda */
+  margin-right: 0px; /* Mantém o span alinhado à esquerda */
 }
 
 /* Responsividade */
@@ -152,12 +163,5 @@
   }
 }
 
-/* Estilo para telas de celulares */
-@media (max-width: 480px) {
-  .additionalImages {
-    grid-template-columns: 1fr; /* Exibe 1 produto por linha */
-  }
-  .sponsored-product {
-    max-width: 100%;
-  }
-}
+
+

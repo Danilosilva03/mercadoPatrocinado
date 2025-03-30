@@ -74,7 +74,7 @@ export default function Footer() {
         <div className="pager-inner-content">
           <hr />
           <p className="copyright">
-            Copyright 2006 - Koba Lamine - Todos Direitos Reservados.
+            Copyright 2010 - Koba Lamine - Todos Direitos Reservados.
           </p>
         </div>
       </footer>

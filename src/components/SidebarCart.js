@@ -91,7 +91,7 @@ export default function SidebarCart({
   return (
     <aside className={`sidebar-cart ${showSidebarCart ? "show" : ""}`}>
       <div className="top">
-        <h3>Carrinho de Compras</h3>
+        <h1>Carrinho de Compras</h1>
         <button onClick={() => setShowSidebarCart(false)}>
           <FontAwesomeIcon icon={faXmark} />
         </button>
@@ -112,7 +112,7 @@ export default function SidebarCart({
             />
           ))
         ) : (
-          <i>Seu carrinho está vazio</i>
+          <i className="Menu-cart">Seu carrinho está vazio !!!</i>
         )}
       </div>
 
