@@ -472,7 +472,7 @@ html, body {
         width: 180px !important;
         object-fit: cover !important;
         border-radius: 8px !important;
-        transform: translateX(-110px) !important; /* Move a imagem 10px para a esquerda */
+        transform: translateX(-115px) !important; /* Move a imagem 10px para a esquerda */
     }
 
 /* FORMULARIO DE PAGAMENTO COMPRAS */
