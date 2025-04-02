@@ -19,7 +19,6 @@ body{
     color: var(--dark-color);
     max-width: 100vw; /* Garante que nenhum elemento ultrapasse a largura da tela */
     overflow-x: hidden; /* Remove a rolagem horizontal */
-
 }
 
 a{
@@ -293,13 +292,19 @@ nav ul li:hover {
 /* Responsividade para telas menores que 480px */
 /* Responsividade para telas menores que 480px */
 @media (max-width: 450px) {
-    html, body {
-        overflow-x: hidden;
+    
+
+    .menu-button {
+        left: 65%;
+        top: 22px;
+        background-color: #ffa600;
+        position: fixed !important;
     }
 
     .mobile-menu {
         width: 220px;
     }
+    
     .product-list {
         display: grid;
         grid-template-columns: repeat(2, minmax(100px, 1fr)); /* Mantém o tamanho proporcional */
