@@ -292,12 +292,12 @@ nav ul li:hover {
 /* Responsividade para telas menores que 480px */
 /* Responsividade para telas menores que 480px */
 @media (max-width: 450px) {
-    html, body {
+     body {
         overflow-x: hidden;
     }
 
     .menu-button {
-        left: 65%;
+        left: 70%;
         top: 22px;
         position: fixed !important;
     }
