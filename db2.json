@@ -2,7 +2,7 @@
   "additionalImages": [
     {
       "id": 17,
-      "name": "Polo Lacoste Azul",
+      "name": "Lacoste Azul",
       "image": "imagens/products/Laco1.jpeg",
       "price": "R$ 250,00",
       "maxInstallments": "10",
@@ -52,7 +52,7 @@
     },
     {
       "id": 22,
-      "name": "Tenis Sport Adidas",
+      "name": "Sport Adidas",
       "image": "imagens/products/ADIDAS.jpeg",
       "price": "R$ 200,00",
       "maxInstallments": "10",
