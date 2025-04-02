@@ -74,7 +74,7 @@
       "id": 24,
       "name": "Tenis Sport Nike",
       "image": "imagens/products/nike.jpg",
-      "price": "R$ 279,99",
+      "price": "R$ 279,00",
       "maxInstallments": "10",
       "rating": 4,
       "installmentPrice": "R$ 300,00",

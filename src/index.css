@@ -472,11 +472,18 @@ html, body {
         width: 180px !important;
         object-fit: cover !important;
         border-radius: 8px !important;
-        transform: translateX(-120px) !important; /* Move a imagem 10px para a esquerda */
+        transform: translateX(-100px) !important; /* Move a imagem 10px para a esquerda */
     }
 
 /* FORMULARIO DE PAGAMENTO COMPRAS */
+.column img {
+    width: 105% !important;
+    filter: drop-shadow(0 0 1px #ffffff);
+    align-items: auto;
+  }
+
 .cart-summary {
+    margin-top: 30px !important;
     text-align: center; /* Centraliza o texto */
     padding: 1rem;
     margin: 0 auto; /* Garante que o container esteja centralizado */
@@ -733,13 +740,13 @@ header {
   }
   
   .color1 {
-    color: rgb(255, 208, 0); /* Azul, por exemplo */
+    color: rgb(255, 255, 255); /* Azul, por exemplo */
     font-size: 1.8rem;
     font-weight: bold;
   }
   
   .color2 {
-    color: rgb(255, 174, 0); /* Vermelho, por exemplo */
+    color: yellow; /* Vermelho, por exemplo */
     font-size: 1.8rem;
     font-weight: bold;
   }

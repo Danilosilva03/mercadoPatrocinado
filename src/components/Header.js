@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import Typed from 'typed.js';
 
 export default function Header() {
- /* useEffect(() => {
+  useEffect(() => {
     const typedOptions = {
       strings: [
         '<span class="color1">Atendimento</span> <span class="color2">Exclusivo</span>',
-        '<span class="color1">Ofertas</span> <span class="color2">e Sem Juros</span>',
-        '<span class="color1">Para Todos os</span> <span class="color2">Clientes</span>',
+        '<span class="color1">Ofertas</span> <span class="color2">e Sem Juros !</span>',
+        '<span class="color1">Para Todos os</span> <span class="color2">Clientes !</span>',
         '<span class="color1">Venha conferir</span> <span class="color2">!!!</span>',
       ],
       typeSpeed: 100,
@@ -20,7 +20,7 @@ export default function Header() {
     return () => {
       typed.destroy(); // Limpa o efeito ao desmontar o componente
     };
-  }, []); */
+  }, []); 
 
   return (
     <header>
@@ -45,7 +45,6 @@ export default function Header() {
           <h2>Agende seu Atendimento</h2>
 
           <p> 
-          Chegou a hora de economizar! Selecionamos os melhores produtos para você com preços imperdíveis !!! 
           </p>
 
           {/* Efeito de Digitação abaixo de "Agende seu Atendimento" */}
