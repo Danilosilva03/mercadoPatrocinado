@@ -292,7 +292,7 @@ nav ul li:hover {
 /* Responsividade para telas menores que 480px */
 /* Responsividade para telas menores que 480px */
 @media (max-width: 450px) {
-     body {
+    html {
         overflow-x: hidden;
     }
 
