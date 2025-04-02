@@ -2,9 +2,9 @@
   "additionalImages": [
     {
       "id": 17,
-      "name": "Polo Lacoste Listrada Azul",
+      "name": "Polo Lacoste Azul",
       "image": "imagens/products/Laco1.jpeg",
-      "price": "R$ 200,00",
+      "price": "R$ 250,00",
       "maxInstallments": "10",
       "rating": 4,
       "installmentPrice": "R$ 125,00",
@@ -12,9 +12,9 @@
     }, 
     {
       "id": 18,
-      "name": "Polo Lacoste Listrada",
+      "name": "Polo Lacoste",
       "image": "imagens/products/Laco2.jpg",
-      "price": "R$ 200,00",
+      "price": "R$ 250,00",
       "maxInstallments": "10",
       "rating": 4,
       "installmentPrice": "R$ 125,00",
@@ -22,7 +22,7 @@
     },
     {
       "id": 19,
-      "name": "Camisa Social Tommy ",
+      "name": "Polo Social Tommy ",
       "image": "imagens/products/Laco34.webp",
       "price": "R$ 149,00",
       "maxInstallments": "10",
@@ -32,17 +32,17 @@
     },
     {
       "id": 20,
-      "name": "Polo Tommy Listrada Azul",
+      "name": "Polo Tommy",
       "image": "imagens/products/Laco33.jpg",
       "price": "R$ 149,00",
-      "maxInstallments": "5",
+      "maxInstallments": "3",
       "rating": 4,
-      "installmentPrice": "R$ 1.000,00",
+      "installmentPrice": "R$50",
       "originalPrice": "R$ 200,00"
     },
     {
       "id": 21,
-      "name": "Social Tommy Listrada",
+      "name": "Social Listrada",
       "image": "imagens/products/Laco5.jpeg",
       "price": "R$ 120,00",
       "maxInstallments": "10",
@@ -52,7 +52,7 @@
     },
     {
       "id": 22,
-      "name": "Tenis Sport Adidas A3",
+      "name": "Tenis Sport Adidas",
       "image": "imagens/products/ADIDAS.jpeg",
       "price": "R$ 200,00",
       "maxInstallments": "10",
@@ -92,7 +92,7 @@
     },
     {
       "id": 26,
-      "name": "Tenis Gucci Tennis 1977",
+      "name": "Tenis Gucci 1977",
       "image": "imagens/products/Gucci.jpeg",
       "price": "R$ 550,00",
       "maxInstallments": "10",
@@ -112,7 +112,7 @@
     },
     {
       "id": 28,
-      "name": "Relogio de Auto Nivel",
+      "name": "Relogio de Nivel",
       "image": "imagens/products/relo2.jpeg",
       "price": "R$ 1.000,00",
       "maxInstallments": "10",
@@ -149,6 +149,36 @@
       "rating": 4,
       "installmentPrice": "R$ 200,00",
       "originalPrice": "R$ 2.425,00"
+    },
+    {
+      "id": 32,
+      "name": "Rolex Luxuoso",
+      "image": "imagens/products/rolex12.webp",
+      "price": "R$ 4.300,00",
+      "maxInstallments": "10",
+      "rating": 4,
+      "installmentPrice": "R$ 200,00",
+      "originalPrice": "R$ 4.825,00"
+    },
+    {
+      "id": 33,
+      "name": "Rolex Luxuoso",
+      "image": "imagens/products/rolexx.jpg",
+      "price": "R$ 6.500,00",
+      "maxInstallments": "10",
+      "rating": 4,
+      "installmentPrice": "R$ 200,00",
+      "originalPrice": "R$ 7.525,00"
+    },
+    {
+      "id": 34,
+      "name": "Rolex Luxuoso",
+      "image": "imagens/products/rolexxx.jpg",
+      "price": "R$ 3.799,00",
+      "maxInstallments": "10",
+      "rating": 4,
+      "installmentPrice": "R$ 200,00",
+      "originalPrice": "R$ 4.425,00"
     }
   ]
 }

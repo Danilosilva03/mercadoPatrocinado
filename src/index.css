@@ -290,9 +290,9 @@ nav ul li:hover {
 }
 /* Responsividade para telas menores que 480px */
 /* Responsividade para telas menores que 480px */
-@media (max-width: 480px) {
+@media (max-width: 450px) {
     .menu-button {
-        left: 60%;
+        left: 55%;
         top: 22px;
     }
 
@@ -427,6 +427,7 @@ nav ul li:hover {
     transform: translateX(-40px); /* Move o valor total 20px para a esquerda */
     margin-bottom: 20px !important;
 }
+
 .sidebar-cart .sidebar-product .quantity-btn {
     width: 30px;
     height: 30px;
@@ -458,7 +459,7 @@ nav ul li:hover {
         width: 180px !important;
         object-fit: cover !important;
         border-radius: 8px !important;
-        transform: translateX(-70px) !important; /* Move a imagem 10px para a esquerda */
+        transform: translateX(-85px) !important; /* Move a imagem 10px para a esquerda */
     }
 
 /* FORMULARIO DE PAGAMENTO COMPRAS */

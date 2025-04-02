@@ -22,7 +22,7 @@
     },
     {
       "id": 19,
-      "name": "Polo Social Tommy ",
+      "name": "Social Tommy ",
       "image": "imagens/products/Laco34.webp",
       "price": "R$ 149,00",
       "maxInstallments": "10",
@@ -72,7 +72,7 @@
     },
     {
       "id": 24,
-      "name": "Tenis Sport Nike Xs",
+      "name": "Tenis Sport Nike",
       "image": "imagens/products/nike.jpg",
       "price": "R$ 279,99",
       "maxInstallments": "10",
