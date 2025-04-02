@@ -1,4 +1,5 @@
 *{
+    
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -16,6 +17,7 @@
 body{
     font-family: "arial";
     color: var(--dark-color);
+    max-width: 100vw; /* Garante que nenhum elemento ultrapasse a largura da tela */
     overflow-x: hidden; /* Remove a rolagem horizontal */
 
 }
@@ -291,9 +293,8 @@ nav ul li:hover {
 /* Responsividade para telas menores que 480px */
 /* Responsividade para telas menores que 480px */
 @media (max-width: 450px) {
-    .menu-button {
-        left: 55%;
-        top: 22px;
+    html, body {
+        overflow-x: hidden;
     }
 
     .mobile-menu {
