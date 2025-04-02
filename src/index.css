@@ -298,12 +298,13 @@ html, body {
 }
 
 .nav {
-    position: relative; /* Para que o .menu-button fique dentro dela */
+    position: fixed;
+    width: 100%; /* Ocupa toda a largura da tela */
 }
 
 .menu-button {
     position: absolute; /* Fica fixo dentro da .nav */
-    right: 100px; /* Alinha ao lado direito do menu */
+    left: 70%; /* Alinha ao lado direito do menu */
     top: 50%; /* Centraliza verticalmente */
     transform: translateY(-50%); /* Ajuste fino para centralizar */
     z-index: 1000; /* Mantém acima de outros elementos */
@@ -429,8 +430,6 @@ html, body {
 .price-sum b {
     color: #ffffff; /* Cor do nome 'Total Soma' */
     font-size: 1rem; /* Aumenta o tamanho da fonte do nome */
-    transform: translateX(-20px); /* Move o valor total 20px para a esquerda */
-
 }
 
 /* Estilizando o valor total do produto */
@@ -438,7 +437,7 @@ html, body {
     font-size: 1.3rem !important; /* Aumenta o tamanho da fonte do valor */
     font-weight: bold; /* Deixa o valor em negrito */
     color: #ffffff !important; /* Cor do valor total */
-    transform: translateX(-40px); /* Move o valor total 20px para a esquerda */
+    transform: translateX(-60px); /* Move o valor total 20px para a esquerda */
     margin-bottom: 20px !important;
 }
 
@@ -455,7 +454,7 @@ html, body {
     cursor: pointer;
     border: none;
     margin-top: 20px !important;
-    transform: translateX(-50px) !important; /* Move os botões de + e - */
+    transform: translateX(-75px) !important; /* Move os botões de + e - */
 }
 
 .sidebar-cart .sidebar-product .quantity-input {
@@ -465,7 +464,7 @@ html, body {
     border-radius: 4px;
     padding: 0.4rem;
     margin-top: 20px !important;
-    transform: translateX(-50px) !important; /* Move a imagem 10px para a esquerda */
+    transform: translateX(-75px) !important; /* Move a imagem 10px para a esquerda */
 }
     .sidebar-cart .sidebar-product img {
         height: 175px !important;
@@ -473,14 +472,19 @@ html, body {
         width: 180px !important;
         object-fit: cover !important;
         border-radius: 8px !important;
-        transform: translateX(-85px) !important; /* Move a imagem 10px para a esquerda */
+        transform: translateX(-120px) !important; /* Move a imagem 10px para a esquerda */
     }
 
 /* FORMULARIO DE PAGAMENTO COMPRAS */
-    .cart-summary {
-        text-align: center;
-        padding: 1rem;
-    }
+.cart-summary {
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem;
+    margin: 0 auto; /* Garante que o container esteja centralizado */
+    display: flex; 
+    flex-direction: column; /* Mantém os elementos um abaixo do outro */
+    align-items: center; /* Centraliza os elementos dentro do container */
+    justify-content: center; /* Mantém o conteúdo bem distribuído */
+}
 
     .products-container {
         display: flex;
@@ -504,7 +508,7 @@ html, body {
     }
     .product-imagee {
         width: 320px !important; /* Ajusta para um tamanho mais uniforme */
-        height: 230px !important;
+        height: 280px !important;
         object-fit: contain !important;
         display: block !important;
         margin: 1rem auto 1.5rem auto !important; /* Aumenta o espaço abaixo da imagem */
@@ -938,7 +942,7 @@ header .right-side img {
     }
 
     .products-container {
-        margin-top: 25rem; 
+        margin-top: 35rem; 
     }
     .exclusive-section {
         background: linear-gradient(135deg, #00315f, #0066a2);
