@@ -34,13 +34,15 @@ button{
 
 /* START Nav */
 .nav{
-    background: linear-gradient(to right, var(--dark-primary-color), #ff8f10); /* Laranja para Amarelo */
+    background: linear-gradient(to right, var(--dark-secondary-color), #2600ff); /* Laranja para Amarelo */
     padding: 2rem;
     position: sticky;
+    border-radius: 10px;
     top: 0;
     left: 0;
     box-shadow: 10px 0px 10px #685353;
     z-index: 10;
+
 }
 
 .nav .inner-content {
