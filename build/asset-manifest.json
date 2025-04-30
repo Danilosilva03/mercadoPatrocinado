@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mercadoPatrocinado/static/css/main.f08ba699.css",
+    "main.js": "/mercadoPatrocinado/static/js/main.35178ca7.js",
+    "index.html": "/mercadoPatrocinado/index.html",
+    "main.f08ba699.css.map": "/mercadoPatrocinado/static/css/main.f08ba699.css.map",
+    "main.35178ca7.js.map": "/mercadoPatrocinado/static/js/main.35178ca7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f08ba699.css",
+    "static/js/main.35178ca7.js"
+  ]
+}
