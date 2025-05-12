@@ -41,7 +41,7 @@ export default function Header() {
               <button type="submit">Enviar</button>           
             </div>
           </div>
-              <h2>Agende seu Atendimento</h2>
+             <h2>Agende seu Atendimento</h2>
 
           {/* Efeito de Digitação abaixo de "Agende seu Atendimento" */}
           <p>

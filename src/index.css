@@ -386,15 +386,22 @@ html, body {
     header .left-side h1 {
         color: #ffffff !important;
         font-size: 3.0rem;
-        margin-bottom: 1rem !important;
-        margin-top: 2rem !important;
+        margin-bottom: 3rem !important;
+        margin-top: 4rem !important;
       }
 
       header .left-side h2 {
-        margin-top: -40px !important;
+        display: none;
+        margin-top: -20px !important;
         margin-bottom: 50px;
         font-size: 1.9rem;
         color: #ffffff !important;
+      }
+
+    header .search-container{
+        margin-top: 60px;
+        margin-bottom: 20px;
+
       }
       
       header .left-side p {
