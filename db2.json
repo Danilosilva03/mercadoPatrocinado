@@ -35,9 +35,9 @@
       "name": "Polo Tommy",
       "image": "imagens/products/Laco33.jpg",
       "price": "R$ 149,00",
-      "maxInstallments": "3",
+      "maxInstallments": "10",
       "rating": 4,
-      "installmentPrice": "R$50",
+      "installmentPrice": "R$150,00",
       "originalPrice": "R$ 200,00"
     },
     {
