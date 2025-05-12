@@ -10,6 +10,8 @@
   margin-bottom: 10px;
   padding-bottom: 0rem;
   margin-top: 3rem;
+  position: relative;
+  left: -30px;
 }
 
 .section-header .bar {
@@ -18,7 +20,8 @@
   background-color: #00498d;
   margin: 4px auto 0 auto;
   margin-bottom: 50px !important; /* Espaço abaixo da linha */
-
+  position: relative;
+  left: -25px;
 }
 
 /* Container para as imagens adicionais */

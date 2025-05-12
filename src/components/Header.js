@@ -5,8 +5,8 @@ export default function Header() {
   useEffect(() => {
     const typedOptions = {
       strings: [
-        '<span class="color1">Atendimento</span> <span class="color2">Exclusivo</span>',
-        '<span class="color1">Ofertas</span> <span class="color2">e Sem Juros !</span>',
+        '<span class="color1">Atendimento</span> <span class="color2">Exclusivo!</span>',
+        '<span class="color1">Ofertas e Sem </span> <span class="color2"> Juros !</span>',
         '<span class="color1">Para Todos os</span> <span class="color2">Clientes !</span>',
         '<span class="color1">Venha conferir</span> <span class="color2">!!!</span>',
       ],
@@ -26,7 +26,7 @@ export default function Header() {
     <header>
       {/* Imagem principal de fundo */}
       <div className="header-background">
-        <img src={`${process.env.PUBLIC_URL}/imagens/iMAGEM33.png`} alt="featured-products-image" />
+        <img src={`${process.env.PUBLIC_URL}/imagens/IMAGEM334.avif`} alt="featured-products-image" />
       </div>
 
       <div className="inner-content">
@@ -41,21 +41,21 @@ export default function Header() {
               <button type="submit">Enviar</button>           
             </div>
           </div>
-
-          <h2>Agende seu Atendimento</h2>
-
-          <p> 
-          </p>
+              <h2>Agende seu Atendimento</h2>
 
           {/* Efeito de Digitação abaixo de "Agende seu Atendimento" */}
           <p>
             <span className="typed"></span>
           </p>
+        {/* Imagem do lado direito */}
+        
+        <p> 
+          </p> 
         </div>
 
-        {/* Imagem do lado direito */}
+         {/* Imagem do lado direito */}
         <div className="right-side">
-          <img src={`${process.env.PUBLIC_URL}/imagens/plano3.png`} alt="Product" />
+        <img src={`${process.env.PUBLIC_URL}/imagens/plano3.png`} alt="Product" />
         </div>
       </div>
     </header>

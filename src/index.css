@@ -34,7 +34,7 @@ button{
 
 /* START Nav */
 .nav{
-    background: linear-gradient(to right, var(--dark-secondary-color), #2600ff); /* Laranja para Amarelo */
+    background: linear-gradient(to right, #e07800, #ffa600); /* Verde claro à esquerda, verde escuro à direita */
     padding: 2rem;
     position: sticky;
     border-radius: 10px;
@@ -42,7 +42,6 @@ button{
     left: 0;
     box-shadow: 10px 0px 10px #685353;
     z-index: 10;
-
 }
 
 .nav .inner-content {
@@ -83,7 +82,9 @@ nav ul{
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    position: relative;
+    left: -18px;
 }
 
 .navs-icon-container{
@@ -94,6 +95,8 @@ nav ul{
 
 .navs-icon-container svg{
     height: 1.9rem;
+    position: relative;
+    left: -28px;
 }
 
 .navs-icon-container .shopping-cart{
@@ -108,7 +111,7 @@ nav ul{
     width: 1.5rem;
     height: 1.5rem;
     bottom: -8px;
-    left: -8px;
+    left: -35px;
     border-radius: 50%;
     color: #ffffff;
     padding: 0.7rem;
@@ -132,12 +135,17 @@ nav ul{
     background-color: #ebebeb;
     border-radius: 8px;
     outline: none;
+    position: relative;
+    left: -18px;
 }
 
 .search-input-container svg{
     height: 1rem;
-    color: #070707;
+    color: #000000;
+    position: relative;
+    left: -18px;
 }
+
 nav ul li {
     cursor: pointer; /* Adiciona o cursor de mão */
     transition: all 0.2s;
@@ -227,8 +235,6 @@ nav ul li:hover {
     .mobile-menu span {
         color: rgb(255, 255, 255);
         font-size: 1.5rem;
-       
-
     }
 
     .mobile-menu ul {
@@ -290,6 +296,44 @@ nav ul li:hover {
         height: 180px !important;
         object-fit: contain !important;
     }
+
+    .right-sidee {
+        background-color: #00315f;
+        color: #fff;
+        width: 100vw;              /* Ocupa 100% da largura da tela */
+        margin: -20px;                 /* Remove margens externas */
+        padding: 5px;                /* Remove preenchimento interno */
+        box-sizing: border-box;   /* Inclui padding e border no cálculo do width */
+        position: relative;   
+        border-radius: 100px;    /* Remove o left: 40rem */
+        margin-bottom: -40px;
+        margin-top: 1px;
+      }
+      
+      .right-sidee h1 {
+        text-align: center;       /* Centraliza o texto */
+        margin-top: 3rem;         /* Espaço acima */
+        margin-bottom: 3rem;      /* Espaço abaixo */
+        font-size: 25px;
+        color: #ffffff;
+      }
+      
+
+      .right-sidee p{
+        font-weight: bold;
+        margin: 1rem;
+        color: #ffffff;
+      }
+     
+       .right-sidee img {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        width: 10px !important;  /* Diminui um pouco mais a imagem */
+        height: auto !important; /* Mantém a proporção */
+        background-color: transparent !important;
+        border-radius: 50px;
+        padding: 1rem;
+      }
 }
 /* Responsividade para telas menores que 480px */
 /* Responsividade para telas menores que 480px */
@@ -304,6 +348,29 @@ html, body {
     width: 100%; /* Ocupa toda a largura da tela */
 }
 
+.navs-icon-container svg{
+    height: 1.9rem;
+    position: relative;
+    left: 5px;
+}
+
+.navs-icon-container .shopping-cart .products-count{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    width: 1.5rem;
+    height: 1.5rem;
+    bottom: -8px;
+    left: -5px;
+    border-radius: 50%;
+    color: #ffffff;
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .menu-button {
     position: absolute; /* Fica fixo dentro da .nav */
     left: 70%; /* Alinha ao lado direito do menu */
@@ -316,21 +383,103 @@ html, body {
         width: 220px;
     }
     
-    .product-list {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(100px, 1fr)); /* Mantém o tamanho proporcional */
-        gap: 1rem;
-        text-align: center;
+    header .left-side h1 {
+        color: #ffffff !important;
+        font-size: 3.0rem;
+        margin-bottom: 1rem !important;
+        margin-top: 2rem !important;
+      }
+
+      header .left-side h2 {
+        margin-top: -40px !important;
+        margin-bottom: 50px;
+        font-size: 1.9rem;
+        color: #ffffff !important;
+      }
+      
+      header .left-side p {
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding-top: 1rem;
         padding-bottom: 2rem;
-        justify-content: center;
-        margin: 0 auto;
+        color: rgb(255, 255, 255) !important;
+      }
+
+      header .right-side img {
+        width: 100%;
+        background-color: transparent; /* Garantia de que o fundo da imagem em si seja transparente */
+        margin-top: 1rem;
+      }
+
+      .right-sidee {
+        background-color: #00315f;
+        color: white;
+        padding: 4rem 2rem;        /* Reduzi o padding para diminuir a altura */
+        text-align: center;
+        margin: 2rem auto;
+        max-width: 1200vw;
+        box-sizing: border-box;
+        margin-top: -20px !important;
+        margin-bottom: -40px !important;   /* Centraliza verticalmente (se quiser) */
+      }
+      
+      .right-sidee h1 {
+        text-align: center;       /* Centraliza o texto */
+        margin-top: 3rem;         /* Espaço acima */
+        margin-bottom: 3rem;      /* Espaço abaixo */
+        font-size: 25px;
+        color: #ffffff;
+      }
+      
+
+      .right-sidee p{
+        font-weight: bold;
+        margin: 1rem;
+        color: #ffffff;
+      }
+     
+      
+  .right-sidee img {
+    display: block !important;
+    margin: 1rem auto !important;
+    max-width: 100% !important;        /* Deixa a imagem ocupar toda a largura do container */
+    width: 120% !important;
+    border-radius: 20px !important; 
+  }
+      
+
+      .color1 {
+        color: rgb(255, 255, 255) !important; /* Azul, por exemplo */
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      
+      .color2 {
+        color: rgb(0, 0, 0) !important; /* Vermelho, por exemplo */
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      .mobile-text {
+        display: block;
+      }
+    
+
+    .product-list {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(100px, 1fr)) ; /* Mantém o tamanho proporcional */
+        gap: 1rem !important;
+        text-align: center !important;
+        padding-bottom: 2rem !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
     }
 
     /* Ajuste das imagens dos produtos */
     .product-image {
         display: block !important; /* Remove possíveis margens automáticas */
         margin: 0 auto !important; /* Centraliza horizontalmente */
-        width: 175px !important;
+        width: 165px !important;
         height: auto;
         object-fit: contain !important;
     }
@@ -484,17 +633,6 @@ html, body {
     align-items: auto;
   }
 
-.cart-summary {
-    margin-top: 30px !important;
-    text-align: center; /* Centraliza o texto */
-    padding: 1rem;
-    margin: 0 auto; /* Garante que o container esteja centralizado */
-    display: flex; 
-    flex-direction: column; /* Mantém os elementos um abaixo do outro */
-    align-items: center; /* Centraliza os elementos dentro do container */
-    justify-content: center; /* Mantém o conteúdo bem distribuído */
-}
-
     .products-container {
         display: flex;
         flex-direction: column;
@@ -553,13 +691,29 @@ html, body {
         font-size: 1.2rem !important;
         font-weight: bold !important;
     }
+
 /* OUTRO PRODUTOS DA LISTA */
 
-.section-header .bar {
-    height: 4px !important; /* Ajuste a espessura da linha conforme necessário */
-    margin-top: 5px !important; /* Espaço acima da linha */
+.section-header h3 {
+    font-size: 30px !important;
+    margin-bottom: 10px !important;
+    padding-bottom: 0rem !important;
+    margin-top: 3rem !important;
+    position: relative !important;
+    left: 5px !important;
+   
+  }
+  
+  .section-header .bar {
+    width: 180px !important;
+    height: 4px !important;
+    background-color: #145b9c !important;
+    margin: 4px auto 0 auto !important;
     margin-bottom: 50px !important; /* Espaço abaixo da linha */
-}
+    position: relative !important;
+    left: 10px !important;
+  }
+
 
 .additionalImages {
     display: grid !important;
@@ -612,6 +766,62 @@ html, body {
     padding: 10px !important;
     width: 100% !important;
 }
+.section-title {
+    padding-bottom: 1rem !important;
+    margin-top: 5rem !important;
+    margin-bottom: 2rem !important; /* Espaço abaixo do título */
+}
+
+.section-title h3 {
+    text-align: center !important;
+    font-size: 1.8rem !important;
+    margin-bottom: 10px !important; /* Espaço abaixo do título */
+}
+
+.section-titlee {
+    padding-bottom: 1rem !important;
+    margin-top: 9rem !important;
+    margin-bottom: 3rem !important; /* Espaço abaixo do título */
+}
+
+.section-titlee h3 {
+    text-align: center !important;
+    font-size: 1.8rem !important;
+    margin-bottom: 13px !important; /* Espaço abaixo do título */
+}
+
+.section-titlee .underline {
+    width: 170px !important;
+    height: 4px !important;
+    background-color: var(--secondary-color) !important;
+    margin: 1px auto 1px auto !important; /* Espaço maior após a linha */
+}
+
+.imagensMeio {
+    display: flex !important;
+    padding: 1rem 1rem !important;
+    justify-content: space-evenly !important;
+    gap: 3rem !important;
+    margin-bottom: 10px !important;
+}
+
+.cart-summary {
+    margin-right: 0 !important;
+    padding: 10px !important;
+    width: 100% !important; /* Ajusta a largura para ocupar a tela toda */
+    margin-bottom: -0px !important;
+    margin-top: 85px !important;
+
+  }
+
+  .page-inner-contenttt {
+    background: linear-gradient(135deg, var(--dark-primary-color), var(--primary-color)) !important;
+    margin-top: -30px !important; /* Ajuste conforme necessário */
+    padding: 3rem 1rem !important; /* Mais espaço interno */
+    height: 260% !important; /* Garante que cresça conforme o conteúdo */
+    color: white !important; /* Texto branco para contraste */
+  }
+  
 }
 
 /* START HEADER */
@@ -621,6 +831,36 @@ header {
     position: relative;
     width: 100%;
     z-index: 1;
+  }
+
+  .right-sidee {
+    background-color: #00315f;
+    color: white;
+    padding: 4rem 2rem;        /* Reduzi o padding para diminuir a altura */
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 1200vw;
+    box-sizing: border-box;
+    margin-top: 255px;
+    margin-bottom: -300px;
+    border-radius: 200px;
+  }
+  
+  .right-sidee h1 {
+    font-size: 1.8rem;         /* Diminui o tamanho do título */
+    margin-bottom: 1rem;
+  }
+  
+  .right-sidee p {
+    font-size: 1rem;           /* Diminui o texto abaixo */
+  }
+  
+  .right-sidee img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 50%;        /* Deixa a imagem ocupar toda a largura do container */
+    width: 50%;
+    border-radius: 44px;     /* Cantos mais abertos e suaves */
   }
   
   .header-background img {
@@ -647,12 +887,12 @@ header {
     color: #ffffff;
     font-size: 3.0rem;
     margin-bottom: 3rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
   
   header .left-side h2 {
     font-size: 1.9rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
   
   header .left-side p {
@@ -996,7 +1236,7 @@ header .right-side img {
     gap: 1rem;
 }
 
-.exclusive-section .content .right-sidee img{
+.exclusive-section .content .right-sideee img{
     max-width: 470px;
 }
 
@@ -1017,45 +1257,12 @@ header .right-side img {
 }
 /* END : EXCLUSIVE SECTION */ 
 
-/* START TESTIMONIALS */
-.testimonialss{
-    display: flex;
-    padding: 4rem 1rem;
-    justify-content: space-evenly;
-}
-
-.testimoniall{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-basis: 30%;
-    text-align: center;
-    box-shadow: 0px 0px 15px #afafaf;
-    padding: 1rem;
-    border-radius: 1rem;
-    transition: all 0.2s;
-    gap: 0.7rem;
-}
-
-.testimoniall:hover{
-    transform: translateY(-5px);
-}
-
-.testimoniall p:first-child{
-    font-weight: bold;
-    font-size: 5rem;
-    color: var(--dark-primary-color);
-    margin-top: 3rem;
-    line-height: 3rem;
-}
-
 /* START FOOTER */
 /* Estilo geral do footer */
 footer {
 
-    background: linear-gradient(135deg,  rgb(73, 70, 70) 42%, gray 40%);
-        color: #ffffff;
+    background: linear-gradient(135deg, var(--dark-primary-color) 41%, var(--dark-secondary-color) 40%);
+    color: #ffffff;
         position: relative; /* Use 'relative' ou 'absolute' conforme necessário */
         width: 100%; /* Garante que o footer ocupe toda a largura */
         margin: 0; /* Remove qualquer margem */
@@ -1171,7 +1378,7 @@ hr {
 
 /* Estilo geral dos Testimonials */
 .testimonialss {
-    background: linear-gradient(135deg, gray 60%, rgb(73, 70, 70) 40%);
+    background: linear-gradient(135deg, var(--dark-secondary-color) 60%, var(--dark-primary-color) 40%);
     display: flex;
     flex-wrap: wrap; /* Ajusta para telas menores */
     padding: 4rem 1rem;
@@ -1183,16 +1390,18 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #e5e7eb;
+    color: #1b1a1a;
     justify-content: center;
     flex-basis: 30%; /* Adapta o tamanho */
     max-width: 350px;
     box-shadow: 0px 0px 15px var(--shadow-color);
     padding: 1rem;
     border-radius: 1rem;
+    margin: 2rem;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
-    gap: 0.7rem;
-    background-color: #ffffff; /* Fundo branco para destaque */
+    gap: 1.7rem;
 }
 
 .testimoniall:hover {
@@ -1238,7 +1447,7 @@ hr {
         flex-direction: column-reverse;
     }
 
-    .exclusive-section .content .right-sidee img{
+    .exclusive-section .content .right-sideee img{
         max-width: 250px;
         margin-bottom: 1srem;
     }
@@ -1280,7 +1489,7 @@ hr {
 
     .copyright{
         font-size: 0.9rem;
-        color: #000000;
+        color: #ffffff;
     }
 
     footer .links ul,
@@ -1498,9 +1707,14 @@ hr {
     display: block;
 }
 
+/* IMAGENS DE SUB */ 
+.page-inner-contenttt {
+    background: linear-gradient(135deg, #e07800, #ff8c00);
+    margin-top: -29px;
+    padding: 2rem 1rem; /* aumenta o espaço interno */
+    min-height: 300px;  /* define uma altura mínima */
+  }
 
-
-/* IMAGENS DE SUB TITULO */
 .imagensMeio {
     display: flex;
     padding: 1rem 1rem;

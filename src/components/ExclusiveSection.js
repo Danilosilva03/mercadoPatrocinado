@@ -8,7 +8,7 @@ export default function ExclusiveSection( addProductToCart) {
   return (
   <div>
     <div className="exclusive-section">
-      <div className="page-inner-content">
+      <div className="page-inner-contentt">
         <div className="content">
           <div className="left-side">
             <h2>Relogio Smart </h2> 
@@ -22,8 +22,8 @@ export default function ExclusiveSection( addProductToCart) {
               <FontAwesomeIcon icon={faChevronRight} />
             </Link>
            </div>
-           <div className="right-sidee">
-              <img src={`${process.env.PUBLIC_URL}/imagens/exclusive.png`} alt="Smart Band" />
+           <div className="right-sideee">
+           <img src={`${process.env.PUBLIC_URL}/imagens/exclusive.png`} alt="Smart Band" />
            </div>
         </div>
       </div>

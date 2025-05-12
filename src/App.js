@@ -10,7 +10,6 @@ import AddCartCompra from './components/AddCartCompra';
 import './App.css';
 import './index.css'; // ou o caminho do seu arquivo de estilo CSS
 
-
 function App() {
   const [products, setProducts] = useState([]);
   const [showSidebarCart, setShowSidebarCart] = useState(false);
@@ -70,7 +69,6 @@ function App() {
     return parseFloat(price.replace(/[^\d,]/g, '').replace(',', '.')) || 0;
   };
   
-
   useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/db.json`)
       .then((res) => {
@@ -116,7 +114,6 @@ function App() {
               element={<FormPagamento cartTotal={cartTotal} selectedProducts={selectedProducts} onRemoveProduct={removeProductFromCart} />}
             />
           </Routes>
-
           <AddCartCompra addProductToCart={addProductToCart} cartItems={selectedProducts} updateCartQuantity={updateCartQuantity} />
         </main>
         <Footer />
