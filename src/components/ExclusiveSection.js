@@ -11,11 +11,11 @@ export default function ExclusiveSection( addProductToCart) {
       <div className="page-inner-contentt">
         <div className="content">
           <div className="left-side">
-            <h2>Relogio Smart </h2> 
+            <h2>Rolex OceanMaster</h2> 
             <p>
-              Relógio Inteligente original com tela grande Touch Screen digital ou analógico,
-              com um design moderno e elegante. Este relógio inteligente é perfeito para quem
-              busca praticidade e tecnologia.
+              Explore o desconhecido com o novo OceanMaster.
+               Um relógio elegante, resistente à água e perfeito para aventuras subaquáticas ou dias chuvosos.
+               Estilo e resistência em um só tempo.
             </p>
             <Link to="products" className="see-more-btnn">
               <span>Ver Agora</span>
@@ -23,7 +23,7 @@ export default function ExclusiveSection( addProductToCart) {
             </Link>
            </div>
            <div className="right-sideee">
-           <img src={`${process.env.PUBLIC_URL}/imagens/exclusive.png`} alt="Smart Band" />
+           <img src={`${process.env.PUBLIC_URL}/imagens/products/rolex13.jpg`} alt="Smart Band" />
            </div>
         </div>
       </div>

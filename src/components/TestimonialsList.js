@@ -5,10 +5,10 @@ export default function TestimonialsList() {
   <div className="page-inner-contenttt">
        <div className="imagensMeio">
        <div className="imagensMeio2"> 
-             <img src={`${process.env.PUBLIC_URL}/imagens/products/orfetass.jpg`} alt="products" />
+             <img src={`${process.env.PUBLIC_URL}/imagens/products/ofertas22.jpg`} alt="products" />
            </div>
             <div className="imagensMeio2">
-            <img src={`${process.env.PUBLIC_URL}/imagens/promo.jpg`} alt="products"  className="headerI" />
+            <img src={`${process.env.PUBLIC_URL}/imagens/products/ofertas7.webp`} alt="products"  className="headerI" />
             </div>
 
            <div className="imagensMeio2">

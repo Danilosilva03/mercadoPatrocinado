@@ -1,0 +1,86 @@
+.carrossel-container {
+  background-image: radial-gradient( rgb(90, 97, 139), #003366);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 1900px;
+  border-radius: 290px;
+  margin-top: 255px;
+  margin-bottom: -330px;
+}
+
+.carrossel-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.carrossel-container p.comercial {
+  font-size: 1rem;
+}
+
+.carrossel {
+  position: relative; /* Aqui é onde a mágica acontece */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.carrossel img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 44px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Setas */
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0084ff;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  z-index: 2;
+}
+
+.seta.esquerda {
+  left: 450px;
+}
+
+.seta.direita {
+  right: 450px;
+}
+
+.seta:hover {
+  background-color: #002f63;
+}
+
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .carrossel-slide img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .seta {
+    font-size: 1.5rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .seta.esquerda {
+    left: -20px;
+  }
+
+  .seta.direita {
+    right: -20px;
+  }
+}

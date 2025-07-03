@@ -80,7 +80,6 @@
   }
 }
 
-
 .cart-summary {
   background-color: rgb(180, 88, 88);
   color: #ffffff;
@@ -102,9 +101,9 @@
 .payment-form {
   flex: 1;
   padding: 35px;
-  border-radius: 8px;
-  background-color: gray; /* Cor sólida */
-  box-shadow: 0 2px 8px rgba(80, 79, 79, 0.1);
+  border-radius: 200px;
+  background-color: rgb(46, 46, 46); /* Cor sólida */
+  box-shadow: 0 2px 8px rgba(48, 47, 47, 0.1);
   display: flex;
   flex-direction: column;
 }
@@ -112,6 +111,7 @@
 .payment-form .title{
   font-size: 1.6rem;
   margin-bottom: 10px;
+  color: rgb(255, 255, 255);
 }
 
 .products-container {
@@ -202,8 +202,10 @@
 .cart-total {
   font-size: 1.2em;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 10px;
   color: rgb(255, 255, 255);
+  transform: translateX(-15px); /* Move 20px para a esquerda */
+  margin-bottom: 10px;
 }
 
 /* Notas de segurança */
@@ -214,26 +216,28 @@
 
 .security-notes p {
   font-size: 14px;
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Formulário de pagamento */
 form {
-  width: 100%; /* Ajusta a largura do formulário */
+  width: 70%; /* Ajusta a largura do formulário */
   padding: 2px;
+  color: #ffffff;
 }
-
 
 .row {
   display: flex;
   justify-content: space-between;
-  gap: 15px;
+  gap: 35px;
   flex-wrap: wrap;
 }
 
 .column {
   flex: 1;
   min-width: 300px;
+  margin-top: 30px;
+  transform: translateX(200px);
 }
 
 .title {
@@ -262,7 +266,7 @@ form {
 }
 
 .column img {
-  height: 75px;
+  height: 45px;
   filter: drop-shadow(0 0 1px #ffffff);
   align-items: auto;
 }
@@ -283,4 +287,132 @@ form {
 
 .btn:hover {
   background: rgb(21, 255, 0);
+}
+/* Status de erro e acerto de compra */
+.compra-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh; /* 100% da altura da tela */
+  text-align: center;
+  padding: 20px;
+}
+
+.compra-status button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.compra-status button:hover {
+  background-color: #45a049;
+}
+/* FORMULARIO DO OUTRO LADO DO DADOS DE ENTREGA */
+.checkout-column {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transform: translateX(220px);
+}
+
+.secure-message {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.Pagacheckout11 {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0;
+  font-size: 16px;
+  color: #000000;
+}
+
+.logo-footer11 {
+  margin-top: 20px;
+}
+
+.logoo11 {
+  font-size: 44px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: yellow;
+}
+
+.logoo11 span {
+  color: #ffffff;
+}
+
+.logo-footer11 p {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.headerI {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.download-options11 {
+  margin-top: 30px;
+}
+
+.download-options11 b {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.app-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.app-images img {
+  width: 460px; /* Aumente aqui o tamanho */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.app-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 480px) {
+  .logoo11 {
+    font-size: 20px;
+  }
+
+  .Pagacheckout11 {
+    font-size: 14px;
+  }
+
+  .secure-message {
+    font-size: 14px;
+  }
+
+  .app-images img {
+    width: 100px;
+  }
 }

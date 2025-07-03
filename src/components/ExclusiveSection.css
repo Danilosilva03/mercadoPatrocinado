@@ -3,6 +3,7 @@
   font-size: 1.8rem;
   margin-top: 20px;
   text-align: center; /* Centraliza o título da seção */
+
 }
 
 .section-header h3 {
@@ -11,7 +12,7 @@
   padding-bottom: 0rem;
   margin-top: 3rem;
   position: relative;
-  left: -30px;
+  left: -8px;
 }
 
 .section-header .bar {
@@ -21,38 +22,40 @@
   margin: 4px auto 0 auto;
   margin-bottom: 50px !important; /* Espaço abaixo da linha */
   position: relative;
-  left: -25px;
+  left: -10px;
 }
 
 /* Container para as imagens adicionais */
 .additionalImages {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo, ajustando automaticamente */
-  gap: 1.5rem;
-  text-align: center;
-  padding-bottom: 2rem;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 1200px;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important; /* 4 por linha em telas grandes */
+    gap: 2rem !important;
+    background: linear-gradient(to right, #e07800, #ffa600); /* Verde claro à esquerda, verde escuro à direita */
+    text-align: center !important;
+    padding: 2rem !important;
+    width: 100vw !important; /* Limite de largura para centralizar tudo */
+    margin: 0 auto !important;     /* Centraliza horizontalmente */
+    justify-items: center !important; /* Centraliza os produtos dentro das colunas */
 }
 /* Cada produto na seção adicional */
 .sponsored-product {
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 270px;
+   width: 299px; /* Aumentado de 220px para 280px */
+    padding: 1rem; /* Um pouco mais de espaço interno */
+    border: 2px solid gray; /* Borda mais grossa */
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-size: 1rem;
+    margin: 0;
 }
 
 /* Garantir que as imagens na seção adicional não ultrapassem o limite do contêiner */
-.sponsored-product-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 1rem;
+.sponsored-product img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+    height: 250px; /* Define uma altura fixa para uniformizar */
+    object-fit: cover; /* Mantém o aspecto da imagem e preenche o contêiner */
+    margin-bottom: 1rem;
 }
 
 .sponsored-product-name {
@@ -63,6 +66,7 @@
 
 .sponsored-product-rating {
   color: #00498d;
+  font-size: 30px;
 }
 
 .linha-sobre-texto {
@@ -167,4 +171,10 @@
 }
 
 
-
+/* Estilo para celular */
+@media (max-width: 450px) {
+  .additionalImages {
+    grid-template-columns: repeat(2, minmax(100px, 1fr)) !important;
+    gap: 1rem !important;
+  }
+}

@@ -7,6 +7,8 @@ import ProductsPage from './components/pages/ProductsPage';
 import SidebarCart from './components/SidebarCart';
 import FormPagamento from './components/FormPagamento';
 import AddCartCompra from './components/AddCartCompra'; 
+import CompraCerta from './components/pages/CompraCerta';     // NOVO
+import CompraErrada from './components/pages/CompraErrada';   // NOVO
 import './App.css';
 import './index.css'; // ou o caminho do seu arquivo de estilo CSS
 
@@ -113,6 +115,8 @@ function App() {
               path="/checkout"
               element={<FormPagamento cartTotal={cartTotal} selectedProducts={selectedProducts} onRemoveProduct={removeProductFromCart} />}
             />
+            <Route path="/compracerta" element={<CompraCerta />} />
+            <Route path="/compraerrada" element={<CompraErrada />} />
           </Routes>
           <AddCartCompra addProductToCart={addProductToCart} cartItems={selectedProducts} updateCartQuantity={updateCartQuantity} />
         </main>

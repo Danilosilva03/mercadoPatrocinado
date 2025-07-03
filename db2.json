@@ -1,0 +1,164 @@
+{
+  "additionalImages": [
+    {
+      "id": 17,
+      "name": "Lacoste Azul",
+      "image": "imagens/products/Laco1.jpeg",
+      "price": 250.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 125.00,
+      "originalPrice": 300.00
+    },
+    {
+      "id": 18,
+      "name": "Polo Lacoste",
+      "image": "imagens/products/Laco2.jpg",
+      "price": 250.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 125.00,
+      "originalPrice": 300.00
+    },
+    {
+      "id": 19,
+      "name": "Social Tommy ",
+      "image": "imagens/products/Laco34.webp",
+      "price": 149.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 125.00,
+      "originalPrice": 200.00
+    },
+    {
+      "id": 20,
+      "name": "Polo Tommy",
+      "image": "imagens/products/Laco33.jpg",
+      "price": 149.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 150.00,
+      "originalPrice": 200.00
+    },
+    {
+      "id": 21,
+      "name": "Social Listrada",
+      "image": "imagens/products/Laco5.jpeg",
+      "price": 120.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 300.00,
+      "originalPrice": 150.00
+    },
+    {
+      "id": 22,
+      "name": "Sport Adidas",
+      "image": "imagens/products/ADIDAS.jpeg",
+      "price": 200.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 300.00,
+      "originalPrice": 250.00
+    },
+    {
+      "id": 23,
+      "name": "Tenis Fila 3S5",
+      "image": "imagens/products/FILA1.webp",
+      "price": 250.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 300.00,
+      "originalPrice": 300.00
+    },
+    {
+      "id": 24,
+      "name": "Tenis Sport Nike",
+      "image": "imagens/products/nike.jpg",
+      "price": 279.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 300.00,
+      "originalPrice": 320.00
+    },
+    {
+      "id": 25,
+      "name": "Tenis Gucci",
+      "image": "imagens/products/Gucci2.jpg",
+      "price": 430.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 300.00,
+      "originalPrice": 569.99
+    },
+    {
+      "id": 26,
+      "name": "Tenis Gucci 1977",
+      "image": "imagens/products/Gucci.jpeg",
+      "price": 550.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 300.00,
+      "originalPrice": 600.00
+    },
+    {
+      "id": 27,
+      "name": "Relogio de Luxo",
+      "image": "imagens/products/Relo1.jpeg",
+      "price": 2500.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 300.00,
+      "originalPrice": 3000.00
+    },
+    {
+      "id": 28,
+      "name": "Relogio Digital",
+      "image": "imagens/products/Relo5.webp",
+      "price": 5500.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 100.00,
+      "originalPrice": 6500.00
+    },
+    {
+      "id": 29,
+      "name": "Rolex Luxuoso",
+      "image": "imagens/products/relo6.jpg",
+      "price": 2000.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 200.00,
+      "originalPrice": 2425.00
+    },
+    {
+      "id": 30,
+      "name": "Rolex Luxuoso",
+      "image": "imagens/products/rolex12.webp",
+      "price": 4300.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 200.00,
+      "originalPrice": 4825.00
+    },
+    {
+      "id": 31,
+      "name": "Rolex Luxuoso",
+      "image": "imagens/products/rolexx.jpg",
+      "price": 6500.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 200.00,
+      "originalPrice": 7525.00
+    },
+    {
+      "id": 32,
+      "name": "Rolex Luxuoso",
+      "image": "imagens/products/rolexxx.jpg",
+      "price": 3799.00,
+      "maxInstallments": 10,
+      "rating": 4,
+      "installmentPrice": 200.00,
+      "originalPrice": 4425.00
+    }
+  ]
+}

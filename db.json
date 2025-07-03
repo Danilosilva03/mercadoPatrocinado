@@ -1,0 +1,164 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Combo Gamer ",
+      "image": "imagens/products/product-4.png",
+      "price": 2500.00,
+      "originalPrice": 3000.00,
+      "installmentPrice": 250.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "name": "Msi GeFore Gtx 1650",
+      "image": "imagens/products/product-5.png",
+      "price": 1499.00,
+      "originalPrice": 2000.00,
+      "installmentPrice": 150.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "name": "Controle PS5",
+      "image": "imagens/products/product-6.png",
+      "price": 400.00,
+      "originalPrice": 500.00,
+      "installmentPrice": 40.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "name": "Cadeira Gamer Frizzi",
+      "image": "imagens/products/product-7.png",
+      "price": 3000.00,
+      "originalPrice": 4000.00,
+      "installmentPrice": 300.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "name": "iPhone 15 Pro Max ",
+      "image": "imagens/products/product-8.png",
+      "price": 8500.00,
+      "originalPrice": 10000.00,
+      "installmentPrice": 850.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "name": "Samsung Galaxy ",
+      "image": "imagens/products/product-9.png",
+      "price": 1000.00,
+      "originalPrice": 1500.00,
+      "installmentPrice": 100.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "name": "Asus Rog Phone 3",
+      "image": "imagens/products/product-10.png",
+      "price": 2500.00,
+      "originalPrice": 3500.00,
+      "installmentPrice": 250.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "name": "Xiaomi 13 Ultra",
+      "image": "imagens/products/product-11.png",
+      "price": 500.00,
+      "originalPrice": 700.00,
+      "installmentPrice": 50.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 9,
+      "name": "Xbox Series X",
+      "image": "imagens/products/product-12.png",
+      "price": 3500.00,
+      "originalPrice": 4500.00,
+      "installmentPrice": 350.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 10,
+      "name": "Racingwheel GT480",
+      "image": "imagens/products/product-13.png",
+      "price": 2500.00,
+      "originalPrice": 3000.00,
+      "installmentPrice": 250.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 11,
+      "name": "PlayStation 5",
+      "image": "imagens/products/product-14.png",
+      "price": 2500.00,
+      "originalPrice": 3000.00,
+      "installmentPrice": 250.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 12,
+      "name": "Gaming Desktop ",
+      "image": "imagens/products/product-15.png",
+      "price": 1500.00,
+      "originalPrice": 2000.00,
+      "installmentPrice": 150.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 13,
+      "name": "Drone XPs15 ",
+      "image": "imagens/products/Drone.jpeg",
+      "price": 6999.00,
+      "originalPrice": 8000.00,
+      "installmentPrice": 700.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 14,
+      "name": "Notebook LG",
+      "image": "imagens/products/product-1.png",
+      "price": 2850.00,
+      "originalPrice": 3500.00,
+      "installmentPrice": 285.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 15,
+      "name": "Notebook Samsung",
+      "image": "imagens/products/product-3.png",
+      "price": 3599.00,
+      "originalPrice": 4500.00,
+      "installmentPrice": 360.00,
+      "maxInstallments": 10,
+      "rating": 4
+    },
+    {
+      "id": 16,
+      "name": "Notebook Lenovo",
+      "image": "imagens/products/product-2.png",
+      "price": 1500.00,
+      "originalPrice": 2000.00,
+      "installmentPrice": 150.00,
+      "maxInstallments": 10,
+      "rating": 4
+    }
+  ]
+}
