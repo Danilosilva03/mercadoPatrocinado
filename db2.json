@@ -102,26 +102,6 @@
     },
     {
       "id": 27,
-      "name": "Rolex de Luxo",
-      "image": "imagens/products/Relo4.jpeg",
-      "price": "R$ 700,00",
-      "maxInstallments": "10",
-      "rating": 4,
-      "installmentPrice": "R$ 300,00",
-      "originalPrice": "R$ 720,00"
-    },
-    {
-      "id": 28,
-      "name": "Relogio de Nivel",
-      "image": "imagens/products/relo2.jpeg",
-      "price": "R$ 1.000,00",
-      "maxInstallments": "10",
-      "rating": 4,
-      "installmentPrice": "R$ 300,00",
-      "originalPrice": "R$ 1100,00"
-    },
-    {
-      "id": 29,
       "name": "Relogio de Luxo",
       "image": "imagens/products/Relo1.jpeg",
       "price": "R$ 2.500,00",
@@ -131,7 +111,7 @@
       "originalPrice": "R$ 3000,00"
     },
     {
-      "id": 30,
+      "id": 28,
       "name": "Relogio Digital",
       "image": "imagens/products/Relo5.webp",
       "price": "R$ 5.500,00",
@@ -141,7 +121,7 @@
       "originalPrice": "R$ 6500,00"
     },
     {
-      "id": 31,
+      "id": 29,
       "name": "Rolex Luxuoso",
       "image": "imagens/products/relo6.jpg",
       "price": "R$ 2.000,00",
@@ -151,7 +131,7 @@
       "originalPrice": "R$ 2.425,00"
     },
     {
-      "id": 32,
+      "id": 30,
       "name": "Rolex Luxuoso",
       "image": "imagens/products/rolex12.webp",
       "price": "R$ 4.300,00",
@@ -161,7 +141,7 @@
       "originalPrice": "R$ 4.825,00"
     },
     {
-      "id": 33,
+      "id": 31,
       "name": "Rolex Luxuoso",
       "image": "imagens/products/rolexx.jpg",
       "price": "R$ 6.500,00",
@@ -171,7 +151,7 @@
       "originalPrice": "R$ 7.525,00"
     },
     {
-      "id": 34,
+      "id": 32,
       "name": "Rolex Luxuoso",
       "image": "imagens/products/rolexxx.jpg",
       "price": "R$ 3.799,00",
